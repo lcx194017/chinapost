@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <meta name="description"
+          content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
     <!-- Twitter meta-->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:site" content="@pratikborsadiya">
@@ -12,15 +13,17 @@
     <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
     <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
-    <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Invoice - Vali Admin</title>
+    <meta property="og:description"
+          content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <title>Charts - Vali Admin</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Font-icon css-->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="app sidebar-mini rtl">
 <!-- Navbar-->
@@ -192,171 +195,34 @@
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-file-text-o"></i> 邮件分流报表</h1>
+            <h1><i class="fa fa-pie-chart"></i> 邮件分拣统计</h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">
             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-            <li class="breadcrumb-item">邮件分流</li>
-            <li class="breadcrumb-item"><a href="#">分流报表生成</a></li>
+            <li class="breadcrumb-item">邮件分拣</li>
+            <li class="breadcrumb-item"><a href="#">邮件分拣统计</a></li>
         </ul>
     </div>
     <div class="row">
-        <div class="col-md-12">
+        <div class="tile">
+            <h3 class="tile-title" align="center">当天邮件分拣情况统计(2018.04.03)</h3>
+            <div id="shunt-day-statistics" style="width: 1000px; height: 500px;"></div>
+        </div>
+
+        <div class="col-md-6">
             <div class="tile">
-                <section class="invoice">
-                    <div class="row mb-4">
-                        <div class="col-6">
-                            <h2 class="page-header"><i class="fa fa-globe"></i> EMS 南京航空集散中心</h2>
-                        </div>
-                        <div class="col-6">
-                            <h5 class="text-right">Date: 04/03/2018</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 align="center">邮件分流报表</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 table-responsive">
-                            <table class="table table-striped">
-                                <thead>
-                                <tr>
-                                    <th>邮件编号</th>
-                                    <th>邮件类别</th>
-                                    <th>重量</th>
-                                    <th>供件时间</th>
-                                    <th>操作人</th>
-                                    <th>供件口</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>100000001</td>
-                                    <td>扁平件</td>
-                                    <td>0.1kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>供件台A1</td>
-                                </tr>
-                                <tr>
-                                    <td>100000002</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>供件台A3</td>
-                                </tr>
-                                <tr>
-                                    <td>100000003</td>
-                                    <td>非标件</td>
-                                    <td>1.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>供件台A2</td>
-                                </tr>
-                                <tr>
-                                    <td>100000001</td>
-                                    <td>扁平件</td>
-                                    <td>0.1kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>供件台A1</td>
-                                </tr>
-                                <tr>
-                                    <td>100000002</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>供件台A3</td>
-                                </tr>
-                                <tr>
-                                    <td>100000003</td>
-                                    <td>非标件</td>
-                                    <td>1.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>供件台A2</td>
-                                </tr>
-                                <tr>
-                                    <td>100000001</td>
-                                    <td>扁平件</td>
-                                    <td>0.1kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>供件台A1</td>
-                                </tr>
-                                <tr>
-                                    <td>100000002</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>供件台A3</td>
-                                </tr>
-                                <tr>
-                                    <td>100000003</td>
-                                    <td>非标件</td>
-                                    <td>1.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>供件台A2</td>
-                                </tr>
-                                <tr>
-                                    <td>100000001</td>
-                                    <td>扁平件</td>
-                                    <td>0.1kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>供件台A1</td>
-                                </tr>
-                                <tr>
-                                    <td>100000002</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>供件台A3</td>
-                                </tr>
-                                <tr>
-                                    <td>100000003</td>
-                                    <td>非标件</td>
-                                    <td>1.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>供件台A2</td>
-                                </tr>
-                                <tr>
-                                    <td>100000001</td>
-                                    <td>扁平件</td>
-                                    <td>0.1kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>供件台A1</td>
-                                </tr>
-                                <tr>
-                                    <td>100000002</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>供件台A3</td>
-                                </tr>
-                                <tr>
-                                    <td>100000003</td>
-                                    <td>非标件</td>
-                                    <td>1.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>供件台A2</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="row d-print-none mt-2">
-                        <div class="col-12 text-right"><a class="btn btn-primary" href="javascript:window.print();" target="_blank"><i class="fa fa-print"></i> 打印</a></div>
-                    </div>
-                </section>
+                <h3 class="tile-title" align="center">邮件分拣量</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <canvas class="embed-responsive-item" id="barChartDemo"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="tile">
+                <h3 class="tile-title" align="center">分拣机负荷占比</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <canvas class="embed-responsive-item" id="pieChartDemo"></canvas>
+                </div>
             </div>
         </div>
     </div>
@@ -366,16 +232,230 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/echarts.js"></script>
 <!-- The javascript plugin to display page loading on top-->
 <script src="js/plugins/pace.min.js"></script>
 <!-- Page specific javascripts-->
+<script type="text/javascript" src="js/plugins/chart.js"></script>
+<script type="text/javascript">
+
+    var dataS = {
+        labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+        datasets: [
+            {
+                label: "My First dataset",
+                fillColor: "rgba(218,112,214,0.2)",
+                strokeColor: "rgba(220,220,220,1)",
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: [80, 81, 56, 140, 88, 93, 150, 129, 79, 85, 76, 120, 115]
+            }
+        ]
+    };
+
+    var sdata = [
+        {
+            value: 300,
+            color: "#f751dd",
+            highlight: "#ff29c0",
+            label: "分拣机S1"
+        },
+        {
+            value: 100,
+            color: "#bf8a17",
+            highlight: "#d3a42e",
+            label: "分拣机S2"
+        },
+        {
+            value: 50,
+            color: "#26a0fd",
+            highlight: "#3179ff",
+            label: "分拣机S3"
+        },
+        {
+            value: 25,
+            color: "#40fd19",
+            highlight: "#3dff1c",
+            label: "分拣机S3"
+        },
+    ]
+
+    var ctxb = $("#barChartDemo").get(0).getContext("2d");
+    var barChart = new Chart(ctxb).Bar(dataS);
+
+    var ctxp = $("#pieChartDemo").get(0).getContext("2d");
+    var pieChart = new Chart(ctxp).Pie(sdata);
+
+</script>
+
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('shunt-day-statistics'));
+    option = {
+        backgroundColor: '#394056',
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                lineStyle: {
+                    color: '#57617B'
+                }
+            }
+        },
+        legend: {
+            icon: 'rect',
+            itemWidth: 14,
+            itemHeight: 5,
+            itemGap: 13,
+            data: ['分拣机S1', '分拣机S2', '分拣机S3'],
+            right: '4%',
+            textStyle: {
+                fontSize: 12,
+                color: '#F1F1F3'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [{
+            type: 'category',
+            boundaryGap: false,
+            axisLine: {
+                lineStyle: {
+                    color: '#57617B'
+                }
+            },
+            data: ['00：00', '00：30', '01：00', '01：30', '02：00', '02：30', '03：00', '03：30',
+                '04：00', '04:30', '05:00', '05:30', '06：00', '06:30', '07:00', '07:30',
+                '08：00', '08:30', '09:00', '09:30']
+        }],
+        yAxis: [{
+            type: 'value',
+            axisTick: {
+                show: false
+            },
+            axisLine: {
+                lineStyle: {
+                    color: '#57617B'
+                }
+            },
+            axisLabel: {
+                margin: 10,
+                textStyle: {
+                    fontSize: 14
+                }
+            },
+            splitLine: {
+                lineStyle: {
+                    color: '#57617B'
+                }
+            }
+        }],
+        series: [{
+            name: '分拣机S1',
+            type: 'line',
+            smooth: true,
+            lineStyle: {
+                normal: {
+                    width: 1
+                }
+            },
+            areaStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: 'rgba(137, 189, 27, 0.3)'
+                    }, {
+                        offset: 0.8,
+                        color: 'rgba(137, 189, 27, 0)'
+                    }], false),
+                    shadowColor: 'rgba(0, 0, 0, 0.1)',
+                    shadowBlur: 10
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: 'rgb(137,189,27)'
+                }
+            },
+            data: [963, 964, 975, 956, 981, 948, 896, 941, 801, 524, 758, 947, 772, 991, 673, 788, 888, 823, 723, 909]
+        }, {
+            name: '分拣机S2',
+            type: 'line',
+            smooth: true,
+            lineStyle: {
+                normal: {
+                    width: 1
+                }
+            },
+            areaStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: 'rgba(0, 136, 212, 0.3)'
+                    }, {
+                        offset: 0.8,
+                        color: 'rgba(0, 136, 212, 0)'
+                    }], false),
+                    shadowColor: 'rgba(0, 0, 0, 0.1)',
+                    shadowBlur: 10
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: 'rgb(0,136,212)'
+                }
+            },
+            data: [973, 992, 993, 1000, 996, 906, 800, 915, 698, 675, 904, 849, 665, 776, 556, 875, 764, 564, 669, 903]
+        }, {
+            name: '分拣机S3',
+            type: 'line',
+            smooth: true,
+            lineStyle: {
+                normal: {
+                    width: 1
+                }
+            },
+            areaStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: 'rgba(219, 50, 51, 0.3)'
+                    }, {
+                        offset: 0.8,
+                        color: 'rgba(219, 50, 51, 0)'
+                    }], false),
+                    shadowColor: 'rgba(0, 0, 0, 0.1)',
+                    shadowBlur: 10
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: 'rgb(219,50,51)'
+                }
+            },
+            data: [842, 810, 675, 721, 437, 885, 919, 1018, 797, 876, 929, 234, 543, 675, 456, 766, 568, 986, 433, 666]
+        },]
+    };
+    myChart.setOption(option);
+</script>
 <!-- Google analytics script-->
 <script type="text/javascript">
-    if(document.location.hostname == 'pratikborsadiya.in') {
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    if (document.location.hostname == 'pratikborsadiya.in') {
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-72504830-1', 'auto');
         ga('send', 'pageview');
     }

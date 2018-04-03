@@ -192,12 +192,12 @@
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-file-text-o"></i> 邮件分流报表</h1>
+            <h1><i class="fa fa-file-text-o"></i> 邮件分拣报表</h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">
             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-            <li class="breadcrumb-item">邮件分流</li>
-            <li class="breadcrumb-item"><a href="#">分流报表生成</a></li>
+            <li class="breadcrumb-item">邮件分拣</li>
+            <li class="breadcrumb-item"><a href="#">分拣报表生成</a></li>
         </ul>
     </div>
     <div class="row">
@@ -213,29 +213,33 @@
                         </div>
                     </div>
                     <div>
-                        <h3 align="center">邮件分流报表</h3>
+                        <h3 align="center">邮件分拣报表</h3>
                     </div>
                     <div class="row">
                         <div class="col-12 table-responsive">
                             <table class="table table-striped">
-                                <thead>
+                                <thead align="center">
                                 <tr>
                                     <th>邮件编号</th>
                                     <th>邮件类别</th>
                                     <th>重量</th>
-                                    <th>供件时间</th>
+                                    <th>分拣时间</th>
                                     <th>操作人</th>
-                                    <th>供件口</th>
+                                    <th>分拣机编号</th>
+                                    <th>航班/车次</th>
+                                    <th>路向</th>
                                 </tr>
                                 </thead>
-                                <tbody>
+                                <tbody align="center">
                                 <tr>
                                     <td>100000001</td>
                                     <td>扁平件</td>
                                     <td>0.1kg</td>
                                     <td>2017-04-25 00:30:25</td>
                                     <td>100001</td>
-                                    <td>供件台A1</td>
+                                    <td>S1</td>
+                                    <td>CF9072</td>
+                                    <td>南京集散-福州</td>
                                 </tr>
                                 <tr>
                                     <td>100000002</td>
@@ -243,7 +247,9 @@
                                     <td>0.5kg</td>
                                     <td>2017-04-25 00:30:25</td>
                                     <td>100005</td>
-                                    <td>供件台A3</td>
+                                    <td>S1</td>
+                                    <td>CA1084</td>
+                                    <td>南京集散-北京</td>
                                 </tr>
                                 <tr>
                                     <td>100000003</td>
@@ -251,103 +257,119 @@
                                     <td>1.2kg</td>
                                     <td>2017-04-25 00:30:25</td>
                                     <td>100004</td>
-                                    <td>供件台A2</td>
+                                    <td>S1</td>
+                                    <td>CA1086</td>
+                                    <td>南京集散-长沙</td>
                                 </tr>
                                 <tr>
-                                    <td>100000001</td>
+                                    <td>100000004</td>
                                     <td>扁平件</td>
-                                    <td>0.1kg</td>
+                                    <td>3.1kg</td>
                                     <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>供件台A1</td>
+                                    <td>100007</td>
+                                    <td>S1</td>
+                                    <td>CF9012</td>
+                                    <td>南京集散-成都</td>
                                 </tr>
                                 <tr>
-                                    <td>100000002</td>
+                                    <td>100000005</td>
+                                    <td>非标件</td>
+                                    <td>0.7kg</td>
+                                    <td>2017-04-25 00:30:25</td>
+                                    <td>100004</td>
+                                    <td>S1</td>
+                                    <td>CA1090</td>
+                                    <td>南京集散-广州</td>
+                                </tr>
+                                <tr>
+                                    <td>100000006</td>
+                                    <td>非标件</td>
+                                    <td>1.4kg</td>
+                                    <td>2017-04-25 00:30:25</td>
+                                    <td>100006</td>
+                                    <td>S1</td>
+                                    <td>CF9034</td>
+                                    <td>南京集散-乌市</td>
+                                </tr>
+                                <tr>
+                                    <td>100000007</td>
+                                    <td>标准件</td>
+                                    <td>0.2kg</td>
+                                    <td>2017-04-25 00:30:25</td>
+                                    <td>100009</td>
+                                    <td>S1</td>
+                                    <td>CF9038</td>
+                                    <td>南京集散-郑州</td>
+                                </tr>
+                                <tr>
+                                    <td>100000008</td>
                                     <td>标准件</td>
                                     <td>0.5kg</td>
                                     <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>供件台A3</td>
+                                    <td>100004</td>
+                                    <td>S1</td>
+                                    <td>CF9092</td>
+                                    <td>南京集散-安庆</td>
                                 </tr>
                                 <tr>
-                                    <td>100000003</td>
+                                    <td>100000009</td>
+                                    <td>扁平件</td>
+                                    <td>0.8kg</td>
+                                    <td>2017-04-25 00:30:25</td>
+                                    <td>100009</td>
+                                    <td>S1</td>
+                                    <td>CF9080</td>
+                                    <td>南京集散-青岛</td>
+                                </tr>
+                                <tr>
+                                    <td>100000005</td>
                                     <td>非标件</td>
-                                    <td>1.2kg</td>
+                                    <td>0.7kg</td>
                                     <td>2017-04-25 00:30:25</td>
                                     <td>100004</td>
-                                    <td>供件台A2</td>
+                                    <td>S1</td>
+                                    <td>CA1090</td>
+                                    <td>南京集散-广州</td>
                                 </tr>
                                 <tr>
-                                    <td>100000001</td>
-                                    <td>扁平件</td>
-                                    <td>0.1kg</td>
+                                    <td>100000006</td>
+                                    <td>非标件</td>
+                                    <td>1.4kg</td>
                                     <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>供件台A1</td>
+                                    <td>100006</td>
+                                    <td>S1</td>
+                                    <td>CF9034</td>
+                                    <td>南京集散-乌市</td>
                                 </tr>
                                 <tr>
-                                    <td>100000002</td>
+                                    <td>100000007</td>
+                                    <td>标准件</td>
+                                    <td>0.2kg</td>
+                                    <td>2017-04-25 00:30:25</td>
+                                    <td>100009</td>
+                                    <td>S1</td>
+                                    <td>CF9038</td>
+                                    <td>南京集散-郑州</td>
+                                </tr>
+                                <tr>
+                                    <td>100000008</td>
                                     <td>标准件</td>
                                     <td>0.5kg</td>
                                     <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>供件台A3</td>
-                                </tr>
-                                <tr>
-                                    <td>100000003</td>
-                                    <td>非标件</td>
-                                    <td>1.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
                                     <td>100004</td>
-                                    <td>供件台A2</td>
+                                    <td>S1</td>
+                                    <td>CF9092</td>
+                                    <td>南京集散-安庆</td>
                                 </tr>
                                 <tr>
-                                    <td>100000001</td>
+                                    <td>100000009</td>
                                     <td>扁平件</td>
-                                    <td>0.1kg</td>
+                                    <td>0.8kg</td>
                                     <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>供件台A1</td>
-                                </tr>
-                                <tr>
-                                    <td>100000002</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>供件台A3</td>
-                                </tr>
-                                <tr>
-                                    <td>100000003</td>
-                                    <td>非标件</td>
-                                    <td>1.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>供件台A2</td>
-                                </tr>
-                                <tr>
-                                    <td>100000001</td>
-                                    <td>扁平件</td>
-                                    <td>0.1kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>供件台A1</td>
-                                </tr>
-                                <tr>
-                                    <td>100000002</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>供件台A3</td>
-                                </tr>
-                                <tr>
-                                    <td>100000003</td>
-                                    <td>非标件</td>
-                                    <td>1.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>供件台A2</td>
+                                    <td>100009</td>
+                                    <td>S1</td>
+                                    <td>CF9080</td>
+                                    <td>南京集散-青岛</td>
                                 </tr>
                                 </tbody>
                             </table>

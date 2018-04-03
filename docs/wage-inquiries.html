@@ -1,648 +1,711 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <!-- Twitter meta-->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:site" content="@pratikborsadiya">
-    <meta property="twitter:creator" content="@pratikborsadiya">
-    <!-- Open Graph Meta-->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Vali Admin">
-    <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
-    <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
-    <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
-    <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Data Table - Vali Admin</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Main CSS-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- Font-icon css-->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body class="app sidebar-mini rtl">
-    <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="index.html">损益结算系统</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
-      <ul class="app-nav">
-        <li class="app-search">
-          <input class="app-search__input" type="search" placeholder="Search">
-          <button class="app-search__button"><i class="fa fa-search"></i></button>
-        </li>
-        <!--Notification Menu-->
-        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
-          <ul class="app-notification dropdown-menu dropdown-menu-right">
-            <li class="app-notification__title">You have 4 new notifications.</li>
-            <div class="app-notification__content">
-              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
-                <div>
-                  <p class="app-notification__message">Lisa sent you a mail</p>
-                  <p class="app-notification__meta">2 min ago</p>
-                </div></a></li>
-              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
-                <div>
-                  <p class="app-notification__message">Mail server not working</p>
-                  <p class="app-notification__meta">5 min ago</p>
-                </div></a></li>
-              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
-                <div>
-                  <p class="app-notification__message">Transaction complete</p>
-                  <p class="app-notification__meta">2 days ago</p>
-                </div></a></li>
-              <div class="app-notification__content">
-                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
-                  <div>
-                    <p class="app-notification__message">Lisa sent you a mail</p>
-                    <p class="app-notification__meta">2 min ago</p>
-                  </div></a></li>
-                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
-                  <div>
-                    <p class="app-notification__message">Mail server not working</p>
-                    <p class="app-notification__meta">5 min ago</p>
-                  </div></a></li>
-                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
-                  <div>
-                    <p class="app-notification__message">Transaction complete</p>
-                    <p class="app-notification__meta">2 days ago</p>
-                  </div></a></li>
+<head>
+  <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+  <!-- Twitter meta-->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:site" content="@pratikborsadiya">
+  <meta property="twitter:creator" content="@pratikborsadiya">
+  <!-- Open Graph Meta-->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vali Admin">
+  <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
+  <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
+  <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
+  <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+  <title>Data Table - Vali Admin</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Main CSS-->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- Font-icon css-->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="app sidebar-mini rtl">
+<!-- Navbar-->
+<header class="app-header"><a class="app-header__logo" href="index.html">损益结算系统</a>
+  <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
+                                  aria-label="Hide Sidebar"></a>
+  <!-- Navbar Right Menu-->
+  <ul class="app-nav">
+    <li class="app-search">
+      <input class="app-search__input" type="search" placeholder="Search">
+      <button class="app-search__button"><i class="fa fa-search"></i></button>
+    </li>
+    <!--Notification Menu-->
+    <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i
+            class="fa fa-bell-o fa-lg"></i></a>
+      <ul class="app-notification dropdown-menu dropdown-menu-right">
+        <li class="app-notification__title">You have 4 new notifications.</li>
+        <div class="app-notification__content">
+          <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span
+                  class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i
+                  class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+            <div>
+              <p class="app-notification__message">Lisa sent you a mail</p>
+              <p class="app-notification__meta">2 min ago</p>
+            </div>
+          </a></li>
+          <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span
+                  class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i
+                  class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+            <div>
+              <p class="app-notification__message">Mail server not working</p>
+              <p class="app-notification__meta">5 min ago</p>
+            </div>
+          </a></li>
+          <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span
+                  class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i
+                  class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+            <div>
+              <p class="app-notification__message">Transaction complete</p>
+              <p class="app-notification__meta">2 days ago</p>
+            </div>
+          </a></li>
+          <div class="app-notification__content">
+            <li><a class="app-notification__item" href="javascript:;"><span
+                    class="app-notification__icon"><span class="fa-stack fa-lg"><i
+                    class="fa fa-circle fa-stack-2x text-primary"></i><i
+                    class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+              <div>
+                <p class="app-notification__message">Lisa sent you a mail</p>
+                <p class="app-notification__meta">2 min ago</p>
               </div>
-            </div>
-            <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
-          </ul>
-        </li>
-        <!-- User Menu-->
-        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
-          <ul class="dropdown-menu settings-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> 设置</a></li>
-            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> 资料</a></li>
-            <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> 退出</a></li>
-          </ul>
-        </li>
-      </ul>
-    </header>
-    <!-- Sidebar menu-->
-    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
-    <aside class="app-sidebar">
-      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="images/user.png" alt="User Image">
-        <div>
-          <p class="app-sidebar__user-name">张  三</p>
-          <p class="app-sidebar__user-designation">财务经理</p>
-        </div>
-      </div>
-      <ul class="app-menu">
-        <li><a class="app-menu__item active" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">生产运行</span></a></li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">邮件分流</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-          <ul class="treeview-menu">
-            <li><a class="treeview-item" href="bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Bootstrap Elements</a></li>
-            <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Font Icons</a></li>
-            <li><a class="treeview-item" href="ui-cards.html"><i class="icon fa fa-circle-o"></i> Cards</a></li>
-            <li><a class="treeview-item" href="widgets.html"><i class="icon fa fa-circle-o"></i> Widgets</a></li>
-          </ul>
-        </li>
-        <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">邮件分拣</span></a></li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">员工调度</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-          <ul class="treeview-menu">
-            <li><a class="treeview-item" href="workload-account.html"><i class="icon fa fa-circle-o"></i> 工作量排行统计</a></li>
-            <li><a class="treeview-item" href="form-custom.html"><i class="icon fa fa-circle-o"></i> Custom Components</a></li>
-            <li><a class="treeview-item" href="form-samples.html"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
-            <li><a class="treeview-item" href="form-notifications.html"><i class="icon fa fa-circle-o"></i> Form Notifications</a></li>
-          </ul>
-        </li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">薪资管理</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-          <ul class="treeview-menu">
-            <li><a class="treeview-item" href="table-basic.html"><i class="icon fa fa-circle-o"></i> Basic Tables</a></li>
-            <li><a class="treeview-item" href="wage-inquiries.html"><i class="icon fa fa-circle-o"></i> 工资查询</a></li>
-          </ul>
-        </li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Pages</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-          <ul class="treeview-menu">
-            <li><a class="treeview-item" href="blank-page.html"><i class="icon fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a class="treeview-item" href="page-login.html"><i class="icon fa fa-circle-o"></i> Login Page</a></li>
-            <li><a class="treeview-item" href="page-lockscreen.html"><i class="icon fa fa-circle-o"></i> Lockscreen Page</a></li>
-            <li><a class="treeview-item" href="page-user.html"><i class="icon fa fa-circle-o"></i> User Page</a></li>
-            <li><a class="treeview-item" href="page-invoice.html"><i class="icon fa fa-circle-o"></i> Invoice Page</a></li>
-            <li><a class="treeview-item" href="page-calendar.html"><i class="icon fa fa-circle-o"></i> Calendar Page</a></li>
-            <li><a class="treeview-item" href="page-mailbox.html"><i class="icon fa fa-circle-o"></i> Mailbox</a></li>
-            <li><a class="treeview-item" href="page-error.html"><i class="icon fa fa-circle-o"></i> Error Page</a></li>
-          </ul>
-        </li>
-      </ul>
-    </aside>
-    <main class="app-content">
-      <div class="app-title">
-        <div>
-          <h1><i class="fa fa-th-list"></i> 工资查询</h1>
-        </div>
-        <ul class="app-breadcrumb breadcrumb side">
-          <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-          <li class="breadcrumb-item"> 薪资管理</li>
-          <li class="breadcrumb-item active"><a href="#"> 工资查询</a></li>
-        </ul>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="tile">
-            <div class="tile-body">
-              <table class="table table-hover table-bordered" id="sampleTable">
-                <thead>
-                  <tr>
-                    <th>员工编号</th>
-                    <th>姓名</th>
-                    <th>职位</th>
-                    <th>年龄</th>
-                    <th>结算日期</th>
-                    <th>待发薪资(元)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>100001</td>
-                    <td>潘  祥</td>
-                    <td>普通员工</td>
-                    <td>41</td>
-                    <td>2017/04/25</td>
-                    <td>320800</td>
-                  </tr>
-                  <tr>
-                    <td>100002</td>
-                    <td>施长江</td>
-                    <td>普通员工</td>
-                    <td>43</td>
-                    <td>2017/07/25</td>
-                    <td>170750</td>
-                  </tr>
-                  <tr>
-                    <td>100003</td>
-                    <td>杨  奇</td>
-                    <td>普通员工</td>
-                    <td>36</td>
-                    <td>2008/01/12</td>
-                    <td>86000</td>
-                  </tr>
-                  <tr>
-                    <td>100004</td>
-                    <td>刘修军</td>
-                    <td>普通员工</td>
-                    <td>22</td>
-                    <td>2018/03/29</td>
-                    <td>433060</td>
-                  </tr>
-                  <tr>
-                    <td>100005</td>
-                    <td>李  强</td>
-                    <td>普通员工</td>
-                    <td>33</td>
-                    <td>2018/11/28</td>
-                    <td>162700</td>
-                  </tr>
-                  <tr>
-                    <td>100006</td>
-                    <td>郭一凡</td>
-                    <td>普通员工</td>
-                    <td>31</td>
-                    <td>2017/12/02</td>
-                    <td>372000</td>
-                  </tr>
-                  <tr>
-                    <td>100007</td>
-                    <td>王春梅</td>
-                    <td>普通员工</td>
-                    <td>39</td>
-                    <td>2017/08/06</td>
-                    <td>137500</td>
-                  </tr>
-                  <tr>
-                    <td>100008</td>
-                    <td>黄  鹏</td>
-                    <td>普通员工</td>
-                    <td>55</td>
-                    <td>2017/10/14</td>
-                    <td>327900</td>
-                  </tr>
-                  <tr>
-                    <td>100009</td>
-                    <td>陈长新</td>
-                    <td>普通员工</td>
-                    <td>39</td>
-                    <td>2017/09/15</td>
-                    <td>205500</td>
-                  </tr>
-                  <tr>
-                    <td>100010</td>
-                    <td>王  丽</td>
-                    <td>普通员工</td>
-                    <td>23</td>
-                    <td>2017/12/13</td>
-                    <td>103600</td>
-                  </tr>
-                  <tr>
-                    <td>100011</td>
-                    <td>房  驰</td>
-                    <td>普通员工</td>
-                    <td>30</td>
-                    <td>2017/12/19</td>
-                    <td>90560</td>
-                  </tr>
-                  <tr>
-                    <td>100012</td>
-                    <td>朱鑫锋</td>
-                    <td>普通员工</td>
-                    <td>22</td>
-                    <td>2018/03/03</td>
-                    <td>342000</td>
-                  </tr>
-                  <tr>
-                    <td>100013</td>
-                    <td>商坤方</td>
-                    <td>普通员工</td>
-                    <td>36</td>
-                    <td>2017/10/16</td>
-                    <td>470600</td>
-                  </tr>
-                  <tr>
-                    <td>100014</td>
-                    <td>谢晓琴</td>
-                    <td>普通员工</td>
-                    <td>43</td>
-                    <td>2017/12/18</td>
-                    <td>313500</td>
-                  </tr>
-                  <tr>
-                    <td>100015</td>
-                    <td>赖东峰</td>
-                    <td>普通员工</td>
-                    <td>39</td>
-                    <td>2018/03/17</td>
-                    <td>385750</td>
-                  </tr>
-                  <tr>
-                    <td>100016</td>
-                    <td>刘克伟</td>
-                    <td>London</td>
-                    <td>46</td>
-                    <td>2017/11/27</td>
-                    <td>198500</td>
-                  </tr>
-                  <tr>
-                    <td>100017</td>
-                    <td>陈爱武</td>
-                    <td>普通员工</td>
-                    <td>44</td>
-                    <td>2017/06/09</td>
-                    <td>725000</td>
-                  </tr>
-                  <tr>
-                    <td>100018</td>
-                    <td>杨树雄</td>
-                    <td>普通员工</td>
-                    <td>48</td>
-                    <td>2017/04/10</td>
-                    <td>237500</td>
-                  </tr>
-                  <tr>
-                    <td>100019</td>
-                    <td>周书香</td>
-                    <td>普通员工</td>
-                    <td>41</td>
-                    <td>2017/10/13</td>
-                    <td>132000</td>
-                  </tr>
-                  <tr>
-                    <td>100020</td>
-                    <td>段艳芳</td>
-                    <td>普通员工</td>
-                    <td>35</td>
-                    <td>2017/09/26</td>
-                    <td>217500</td>
-                  </tr>
-                  <tr>
-                    <td>100021</td>
-                    <td>刘东梅</td>
-                    <td>普通员工</td>
-                    <td>30</td>
-                    <td>2017/09/03</td>
-                    <td>345000</td>
-                  </tr>
-                  <tr>
-                    <td>100022</td>
-                    <td>高  萌</td>
-                    <td>普通员工</td>
-                    <td>40</td>
-                    <td>2017/06/25</td>
-                    <td>675000</td>
-                  </tr>
-                  <tr>
-                    <td>100023</td>
-                    <td>李  强</td>
-                    <td>普通员工</td>
-                    <td>21</td>
-                    <td>2017/12/12</td>
-                    <td>106450</td>
-                  </tr>
-                  <tr>
-                    <td>100024</td>
-                    <td>邓仕芳</td>
-                    <td>普通员工</td>
-                    <td>23</td>
-                    <td>2017/09/20</td>
-                    <td>85600</td>
-                  </tr>
-                  <tr>
-                    <td>100025</td>
-                    <td>谢伟东</td>
-                    <td>普通员工</td>
-                    <td>47</td>
-                    <td>2017/10/09</td>
-                    <td>1200000</td>
-                  </tr>
-                  <tr>
-                    <td>100026</td>
-                    <td>许  赛</td>
-                    <td>普通员工</td>
-                    <td>42</td>
-                    <td>2017/12/22</td>
-                    <td>92575</td>
-                  </tr>
-                  <tr>
-                    <td>100027</td>
-                    <td>梅雪冰</td>
-                    <td>普通员工</td>
-                    <td>28</td>
-                    <td>2017/11/14</td>
-                    <td>357650</td>
-                  </tr>
-                  <tr>
-                    <td>100028</td>
-                    <td>吴少凯</td>
-                    <td>普通员工</td>
-                    <td>28</td>
-                    <td>2017/06/07</td>
-                    <td>206850</td>
-                  </tr>
-                  <tr>
-                    <td>100029</td>
-                    <td>叶  凡</td>
-                    <td>普通员工</td>
-                    <td>48</td>
-                    <td>2017/03/11</td>
-                    <td>850000</td>
-                  </tr>
-                  <tr>
-                    <td>100030</td>
-                    <td>黄旭彬</td>
-                    <td>普通员工</td>
-                    <td>20</td>
-                    <td>2017/08/14</td>
-                    <td>163000</td>
-                  </tr>
-                  <tr>
-                    <td>100031</td>
-                    <td>赖超平</td>
-                    <td>普通员工</td>
-                    <td>37</td>
-                    <td>2017/06/02</td>
-                    <td>95400</td>
-                  </tr>
-                  <tr>
-                    <td>100032</td>
-                    <td>彭星星</td>
-                    <td>普通员工</td>
-                    <td>53</td>
-                    <td>2017/10/22</td>
-                    <td>114500</td>
-                  </tr>
-                  <tr>
-                    <td>100033</td>
-                    <td>唐举成</td>
-                    <td>普通员工</td>
-                    <td>27</td>
-                    <td>2017/05/07</td>
-                    <td>145000</td>
-                  </tr>
-                  <tr>
-                    <td>100034</td>
-                    <td>赵海兰</td>
-                    <td>普通员工</td>
-                    <td>22</td>
-                    <td>2017/10/26</td>
-                    <td>235500</td>
-                  </tr>
-                  <tr>
-                    <td>100035</td>
-                    <td>石欢燕</td>
-                    <td>普通员工</td>
-                    <td>46</td>
-                    <td>2017/03/09</td>
-                    <td>324050</td>
-                  </tr>
-                  <tr>
-                    <td>100036</td>
-                    <td>谢  可</td>
-                    <td>普通员工</td>
-                    <td>47</td>
-                    <td>2017/12/09</td>
-                    <td>85675</td>
-                  </tr>
-                  <tr>
-                    <td>100037</td>
-                    <td>何锦涛</td>
-                    <td>普通员工</td>
-                    <td>51</td>
-                    <td>2017/12/16</td>
-                    <td>164500</td>
-                  </tr>
-                  <tr>
-                    <td>100038</td>
-                    <td>刁世环</td>
-                    <td>普通员工</td>
-                    <td>41</td>
-                    <td>2017/02/12</td>
-                    <td>109850</td>
-                  </tr>
-                  <tr>
-                    <td>100039</td>
-                    <td>王九云</td>
-                    <td>普通员工</td>
-                    <td>42</td>
-                    <td>2017/02/14</td>
-                    <td>452500</td>
-                  </tr>
-                  <tr>
-                    <td>100040</td>
-                    <td>江美苏</td>
-                    <td>普通员工</td>
-                    <td>37</td>
-                    <td>2017/12/11</td>
-                    <td>136200</td>
-                  </tr>
-                  <tr>
-                    <td>100041</td>
-                    <td>吴奇星</td>
-                    <td>普通员工</td>
-                    <td>45</td>
-                    <td>2017/09/26</td>
-                    <td>645750</td>
-                  </tr>
-                  <tr>
-                    <td>100042</td>
-                    <td>黄奕璇</td>
-                    <td>普通员工</td>
-                    <td>44</td>
-                    <td>2017/02/03</td>
-                    <td>234500</td>
-                  </tr>
-                  <tr>
-                    <td>100043</td>
-                    <td>林泽宇</td>
-                    <td>普通员工</td>
-                    <td>38</td>
-                    <td>2017/05/03</td>
-                    <td>163500</td>
-                  </tr>
-                  <tr>
-                    <td>100044</td>
-                    <td>张二伟</td>
-                    <td>普通员工</td>
-                    <td>37</td>
-                    <td>2017/08/19</td>
-                    <td>139575</td>
-                  </tr>
-                  <tr>
-                    <td>100045</td>
-                    <td>张立谋</td>
-                    <td>普通员工</td>
-                    <td>41</td>
-                    <td>2017/08/11</td>
-                    <td>98540</td>
-                  </tr>
-                  <tr>
-                    <td>100046</td>
-                    <td>肖  颖</td>
-                    <td>普通员工</td>
-                    <td>47</td>
-                    <td>2017/07/07</td>
-                    <td>87500</td>
-                  </tr>
-                  <tr>
-                    <td>100047</td>
-                    <td>赖子杰</td>
-                    <td>普通员工</td>
-                    <td>44</td>
-                    <td>2017/04/09</td>
-                    <td>138575</td>
-                  </tr>
-                  <tr>
-                    <td>100048</td>
-                    <td>叶苗苗</td>
-                    <td>普通员工</td>
-                    <td>43</td>
-                    <td>2017/01/04</td>
-                    <td>125250</td>
-                  </tr>
-                  <tr>
-                    <td>100049</td>
-                    <td>崔彦丽</td>
-                    <td>普通员工</td>
-                    <td>36</td>
-                    <td>2017/06/01</td>
-                    <td>115000</td>
-                  </tr>
-                  <tr>
-                    <td>100050</td>
-                    <td>吴泽凡</td>
-                    <td>普通员工</td>
-                    <td>43</td>
-                    <td>2017/02/01</td>
-                    <td>75650</td>
-                  </tr>
-                  <tr>
-                    <td>100051</td>
-                    <td>宋艳华</td>
-                    <td>普通员工</td>
-                    <td>46</td>
-                    <td>2017/12/06</td>
-                    <td>145,600</td>
-                  </tr>
-                  <tr>
-                    <td>100052</td>
-                    <td>张柳青</td>
-                    <td>普通员工</td>
-                    <td>47</td>
-                    <td>2017/03/21</td>
-                    <td>356250</td>
-                  </tr>
-                  <tr>
-                    <td>100053</td>
-                    <td>谭丽娜</td>
-                    <td>普通员工</td>
-                    <td>21</td>
-                    <td>2018/02/27</td>
-                    <td>103500</td>
-                  </tr>
-                  <tr>
-                    <td>100054</td>
-                    <td>刘小雄</td>
-                    <td>普通员工</td>
-                    <td>30</td>
-                    <td>2017/07/14</td>
-                    <td>86500</td>
-                  </tr>
-                  <tr>
-                    <td>100055</td>
-                    <td>何成坤</td>
-                    <td>普通员工</td>
-                    <td>51</td>
-                    <td>2017/11/13</td>
-                    <td>183000</td>
-                  </tr>
-                  <tr>
-                    <td>100056</td>
-                    <td>秦漫银</td>
-                    <td>普通员工</td>
-                    <td>29</td>
-                    <td>2017/06/27</td>
-                    <td>183,000</td>
-                  </tr>
-                  <tr>
-                    <td>100057</td>
-                    <td>苏少等</td>
-                    <td>普通员工</td>
-                    <td>27</td>
-                    <td>2017/01/25</td>
-                    <td>112,000</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            </a></li>
+            <li><a class="app-notification__item" href="javascript:;"><span
+                    class="app-notification__icon"><span class="fa-stack fa-lg"><i
+                    class="fa fa-circle fa-stack-2x text-danger"></i><i
+                    class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+              <div>
+                <p class="app-notification__message">Mail server not working</p>
+                <p class="app-notification__meta">5 min ago</p>
+              </div>
+            </a></li>
+            <li><a class="app-notification__item" href="javascript:;"><span
+                    class="app-notification__icon"><span class="fa-stack fa-lg"><i
+                    class="fa fa-circle fa-stack-2x text-success"></i><i
+                    class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+              <div>
+                <p class="app-notification__message">Transaction complete</p>
+                <p class="app-notification__meta">2 days ago</p>
+              </div>
+            </a></li>
           </div>
         </div>
+        <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
+      </ul>
+    </li>
+    <!-- User Menu-->
+    <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i
+            class="fa fa-user fa-lg"></i></a>
+      <ul class="dropdown-menu settings-menu dropdown-menu-right">
+        <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> 设置</a></li>
+        <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> 资料</a></li>
+        <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> 退出</a></li>
+      </ul>
+    </li>
+  </ul>
+</header>
+<!-- Sidebar menu-->
+<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+<aside class="app-sidebar">
+  <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="images/user.png" alt="User Image">
+    <div>
+      <p class="app-sidebar__user-name">张 三</p>
+      <p class="app-sidebar__user-designation">财务经理</p>
+    </div>
+  </div>
+  <ul class="app-menu">
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+            class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">生产运行</span><i
+            class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li><a class="treeview-item" href="index.html"><i class="icon fa fa-circle-o"></i> 系统实时负荷</a></li>
+        <li><a class="treeview-item" href="export-statistics.html"><i class="icon fa fa-circle-o"></i> 出口及时赶发率统计</a>
+        </li>
+        <li><a class="treeview-item" href=""><i class="icon fa fa-circle-o"></i> 分发及时率</a></li>
+        <li><a class="treeview-item" href=""><i class="icon fa fa-circle-o"></i> 非标邮件统计</a></li>
+        <li><a class="treeview-item" href=""><i class="icon fa fa-circle-o"></i> 邮件积压情况</a></li>
+        <li><a class="treeview-item" href=""><i class="icon fa fa-circle-o"></i> 装箱规范率统计</a></li>
+      </ul>
+    </li>
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+            class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">邮件分流</span><i
+            class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li><a class="treeview-item" href="shunt-data.html"><i class="icon fa fa-circle-o"></i>
+          邮件分流数据</a></li>
+        <li><a class="treeview-item" href="shunt-statistics.html"><i class="icon fa fa-circle-o"></i> 邮件分流统计</a></li>
+        <li><a class="treeview-item" href="shunt-report.html"><i class="icon fa fa-circle-o"></i> 分流报表生成</a></li>
+
+      </ul>
+    </li>
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+            class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">邮件分拣</span><i
+            class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li><a class="treeview-item" href="sort-data.html"><i class="icon fa fa-circle-o"></i>
+          邮件分拣数据</a></li>
+        <li><a class="treeview-item" href="sort-statistics.html"><i class="icon fa fa-circle-o"></i> 邮件分拣统计</a></li>
+        <li><a class="treeview-item" href="sort-report.html"><i class="icon fa fa-circle-o"></i> 分拣报表生成</a></li>
+
+      </ul>
+    </li>
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+            class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">员工调度</span><i
+            class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li><a class="treeview-item" href="workload-statistics.html"><i class="icon fa fa-circle-o"></i>
+          工作量统计</a></li>
+        <li><a class="treeview-item" href="workload-details.html"><i class="icon fa fa-circle-o"></i> 详细信息</a>
+        </li>
+        <li><a class="treeview-item" href="workload-account.html"><i class="icon fa fa-circle-o"></i> 工作量排行</a>
+        </li>
+        <li><a class="treeview-item" href="workload-report.html"><i class="icon fa fa-circle-o"></i> 报表生成</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+            class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">薪资管理</span><i
+            class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li><a class="treeview-item" href="table-basic.html"><i class="icon fa fa-circle-o"></i> Basic
+          Tables</a></li>
+        <li><a class="treeview-item" href="wage-inquiries.html"><i class="icon fa fa-circle-o"></i> 工资查询</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+            class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">其它</span><i
+            class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li><a class="treeview-item" href="page-login.html"><i class="icon fa fa-circle-o"></i> 系统登陆</a></li>
+        <li><a class="treeview-item" href="page-lockscreen.html"><i class="icon fa fa-circle-o"></i> 账号管理</a>
+        </li>
+        <li><a class="treeview-item" href="page-calendar.html"><i class="icon fa fa-circle-o"></i> 备忘录</a></li>
+        <li><a class="treeview-item" href="page-mailbox.html"><i class="icon fa fa-circle-o"></i> 邮箱</a></li>
+      </ul>
+    </li>
+  </ul>
+</aside>
+<main class="app-content">
+  <div class="app-title">
+    <div>
+      <h1><i class="fa fa-th-list"></i> 工资查询</h1>
+    </div>
+    <ul class="app-breadcrumb breadcrumb side">
+      <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+      <li class="breadcrumb-item"> 薪资管理</li>
+      <li class="breadcrumb-item active"><a href="#"> 工资查询</a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="tile">
+        <section class="invoice">
+          <div class="tile-body">
+            <table class="table table-hover table-bordered" id="sampleTable">
+              <thead>
+              <tr>
+                <th>员工编号</th>
+                <th>姓名</th>
+                <th>职位</th>
+                <th>年龄</th>
+                <th>结算日期</th>
+                <th>待发薪资(元)</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>100001</td>
+                <td>潘  祥</td>
+                <td>普通员工</td>
+                <td>41</td>
+                <td>2017/04/25</td>
+                <td>320800</td>
+              </tr>
+              <tr>
+                <td>100002</td>
+                <td>施长江</td>
+                <td>普通员工</td>
+                <td>43</td>
+                <td>2017/07/25</td>
+                <td>170750</td>
+              </tr>
+              <tr>
+                <td>100003</td>
+                <td>杨  奇</td>
+                <td>普通员工</td>
+                <td>36</td>
+                <td>2008/01/12</td>
+                <td>86000</td>
+              </tr>
+              <tr>
+                <td>100004</td>
+                <td>刘修军</td>
+                <td>普通员工</td>
+                <td>22</td>
+                <td>2018/03/29</td>
+                <td>433060</td>
+              </tr>
+              <tr>
+                <td>100005</td>
+                <td>李  强</td>
+                <td>普通员工</td>
+                <td>33</td>
+                <td>2018/11/28</td>
+                <td>162700</td>
+              </tr>
+              <tr>
+                <td>100006</td>
+                <td>郭一凡</td>
+                <td>普通员工</td>
+                <td>31</td>
+                <td>2017/12/02</td>
+                <td>372000</td>
+              </tr>
+              <tr>
+                <td>100007</td>
+                <td>王春梅</td>
+                <td>普通员工</td>
+                <td>39</td>
+                <td>2017/08/06</td>
+                <td>137500</td>
+              </tr>
+              <tr>
+                <td>100008</td>
+                <td>黄  鹏</td>
+                <td>普通员工</td>
+                <td>55</td>
+                <td>2017/10/14</td>
+                <td>327900</td>
+              </tr>
+              <tr>
+                <td>100009</td>
+                <td>陈长新</td>
+                <td>普通员工</td>
+                <td>39</td>
+                <td>2017/09/15</td>
+                <td>205500</td>
+              </tr>
+              <tr>
+                <td>100010</td>
+                <td>王  丽</td>
+                <td>普通员工</td>
+                <td>23</td>
+                <td>2017/12/13</td>
+                <td>103600</td>
+              </tr>
+              <tr>
+                <td>100011</td>
+                <td>房  驰</td>
+                <td>普通员工</td>
+                <td>30</td>
+                <td>2017/12/19</td>
+                <td>90560</td>
+              </tr>
+              <tr>
+                <td>100012</td>
+                <td>朱鑫锋</td>
+                <td>普通员工</td>
+                <td>22</td>
+                <td>2018/03/03</td>
+                <td>342000</td>
+              </tr>
+              <tr>
+                <td>100013</td>
+                <td>商坤方</td>
+                <td>普通员工</td>
+                <td>36</td>
+                <td>2017/10/16</td>
+                <td>470600</td>
+              </tr>
+              <tr>
+                <td>100014</td>
+                <td>谢晓琴</td>
+                <td>普通员工</td>
+                <td>43</td>
+                <td>2017/12/18</td>
+                <td>313500</td>
+              </tr>
+              <tr>
+                <td>100015</td>
+                <td>赖东峰</td>
+                <td>普通员工</td>
+                <td>39</td>
+                <td>2018/03/17</td>
+                <td>385750</td>
+              </tr>
+              <tr>
+                <td>100016</td>
+                <td>刘克伟</td>
+                <td>London</td>
+                <td>46</td>
+                <td>2017/11/27</td>
+                <td>198500</td>
+              </tr>
+              <tr>
+                <td>100017</td>
+                <td>陈爱武</td>
+                <td>普通员工</td>
+                <td>44</td>
+                <td>2017/06/09</td>
+                <td>725000</td>
+              </tr>
+              <tr>
+                <td>100018</td>
+                <td>杨树雄</td>
+                <td>普通员工</td>
+                <td>48</td>
+                <td>2017/04/10</td>
+                <td>237500</td>
+              </tr>
+              <tr>
+                <td>100019</td>
+                <td>周书香</td>
+                <td>普通员工</td>
+                <td>41</td>
+                <td>2017/10/13</td>
+                <td>132000</td>
+              </tr>
+              <tr>
+                <td>100020</td>
+                <td>段艳芳</td>
+                <td>普通员工</td>
+                <td>35</td>
+                <td>2017/09/26</td>
+                <td>217500</td>
+              </tr>
+              <tr>
+                <td>100021</td>
+                <td>刘东梅</td>
+                <td>普通员工</td>
+                <td>30</td>
+                <td>2017/09/03</td>
+                <td>345000</td>
+              </tr>
+              <tr>
+                <td>100022</td>
+                <td>高  萌</td>
+                <td>普通员工</td>
+                <td>40</td>
+                <td>2017/06/25</td>
+                <td>675000</td>
+              </tr>
+              <tr>
+                <td>100023</td>
+                <td>李  强</td>
+                <td>普通员工</td>
+                <td>21</td>
+                <td>2017/12/12</td>
+                <td>106450</td>
+              </tr>
+              <tr>
+                <td>100024</td>
+                <td>邓仕芳</td>
+                <td>普通员工</td>
+                <td>23</td>
+                <td>2017/09/20</td>
+                <td>85600</td>
+              </tr>
+              <tr>
+                <td>100025</td>
+                <td>谢伟东</td>
+                <td>普通员工</td>
+                <td>47</td>
+                <td>2017/10/09</td>
+                <td>1200000</td>
+              </tr>
+              <tr>
+                <td>100026</td>
+                <td>许  赛</td>
+                <td>普通员工</td>
+                <td>42</td>
+                <td>2017/12/22</td>
+                <td>92575</td>
+              </tr>
+              <tr>
+                <td>100027</td>
+                <td>梅雪冰</td>
+                <td>普通员工</td>
+                <td>28</td>
+                <td>2017/11/14</td>
+                <td>357650</td>
+              </tr>
+              <tr>
+                <td>100028</td>
+                <td>吴少凯</td>
+                <td>普通员工</td>
+                <td>28</td>
+                <td>2017/06/07</td>
+                <td>206850</td>
+              </tr>
+              <tr>
+                <td>100029</td>
+                <td>叶  凡</td>
+                <td>普通员工</td>
+                <td>48</td>
+                <td>2017/03/11</td>
+                <td>850000</td>
+              </tr>
+              <tr>
+                <td>100030</td>
+                <td>黄旭彬</td>
+                <td>普通员工</td>
+                <td>20</td>
+                <td>2017/08/14</td>
+                <td>163000</td>
+              </tr>
+              <tr>
+                <td>100031</td>
+                <td>赖超平</td>
+                <td>普通员工</td>
+                <td>37</td>
+                <td>2017/06/02</td>
+                <td>95400</td>
+              </tr>
+              <tr>
+                <td>100032</td>
+                <td>彭星星</td>
+                <td>普通员工</td>
+                <td>53</td>
+                <td>2017/10/22</td>
+                <td>114500</td>
+              </tr>
+              <tr>
+                <td>100033</td>
+                <td>唐举成</td>
+                <td>普通员工</td>
+                <td>27</td>
+                <td>2017/05/07</td>
+                <td>145000</td>
+              </tr>
+              <tr>
+                <td>100034</td>
+                <td>赵海兰</td>
+                <td>普通员工</td>
+                <td>22</td>
+                <td>2017/10/26</td>
+                <td>235500</td>
+              </tr>
+              <tr>
+                <td>100035</td>
+                <td>石欢燕</td>
+                <td>普通员工</td>
+                <td>46</td>
+                <td>2017/03/09</td>
+                <td>324050</td>
+              </tr>
+              <tr>
+                <td>100036</td>
+                <td>谢  可</td>
+                <td>普通员工</td>
+                <td>47</td>
+                <td>2017/12/09</td>
+                <td>85675</td>
+              </tr>
+              <tr>
+                <td>100037</td>
+                <td>何锦涛</td>
+                <td>普通员工</td>
+                <td>51</td>
+                <td>2017/12/16</td>
+                <td>164500</td>
+              </tr>
+              <tr>
+                <td>100038</td>
+                <td>刁世环</td>
+                <td>普通员工</td>
+                <td>41</td>
+                <td>2017/02/12</td>
+                <td>109850</td>
+              </tr>
+              <tr>
+                <td>100039</td>
+                <td>王九云</td>
+                <td>普通员工</td>
+                <td>42</td>
+                <td>2017/02/14</td>
+                <td>452500</td>
+              </tr>
+              <tr>
+                <td>100040</td>
+                <td>江美苏</td>
+                <td>普通员工</td>
+                <td>37</td>
+                <td>2017/12/11</td>
+                <td>136200</td>
+              </tr>
+              <tr>
+                <td>100041</td>
+                <td>吴奇星</td>
+                <td>普通员工</td>
+                <td>45</td>
+                <td>2017/09/26</td>
+                <td>645750</td>
+              </tr>
+              <tr>
+                <td>100042</td>
+                <td>黄奕璇</td>
+                <td>普通员工</td>
+                <td>44</td>
+                <td>2017/02/03</td>
+                <td>234500</td>
+              </tr>
+              <tr>
+                <td>100043</td>
+                <td>林泽宇</td>
+                <td>普通员工</td>
+                <td>38</td>
+                <td>2017/05/03</td>
+                <td>163500</td>
+              </tr>
+              <tr>
+                <td>100044</td>
+                <td>张二伟</td>
+                <td>普通员工</td>
+                <td>37</td>
+                <td>2017/08/19</td>
+                <td>139575</td>
+              </tr>
+              <tr>
+                <td>100045</td>
+                <td>张立谋</td>
+                <td>普通员工</td>
+                <td>41</td>
+                <td>2017/08/11</td>
+                <td>98540</td>
+              </tr>
+              <tr>
+                <td>100046</td>
+                <td>肖  颖</td>
+                <td>普通员工</td>
+                <td>47</td>
+                <td>2017/07/07</td>
+                <td>87500</td>
+              </tr>
+              <tr>
+                <td>100047</td>
+                <td>赖子杰</td>
+                <td>普通员工</td>
+                <td>44</td>
+                <td>2017/04/09</td>
+                <td>138575</td>
+              </tr>
+              <tr>
+                <td>100048</td>
+                <td>叶苗苗</td>
+                <td>普通员工</td>
+                <td>43</td>
+                <td>2017/01/04</td>
+                <td>125250</td>
+              </tr>
+              <tr>
+                <td>100049</td>
+                <td>崔彦丽</td>
+                <td>普通员工</td>
+                <td>36</td>
+                <td>2017/06/01</td>
+                <td>115000</td>
+              </tr>
+              <tr>
+                <td>100050</td>
+                <td>吴泽凡</td>
+                <td>普通员工</td>
+                <td>43</td>
+                <td>2017/02/01</td>
+                <td>75650</td>
+              </tr>
+              <tr>
+                <td>100051</td>
+                <td>宋艳华</td>
+                <td>普通员工</td>
+                <td>46</td>
+                <td>2017/12/06</td>
+                <td>145,600</td>
+              </tr>
+              <tr>
+                <td>100052</td>
+                <td>张柳青</td>
+                <td>普通员工</td>
+                <td>47</td>
+                <td>2017/03/21</td>
+                <td>356250</td>
+              </tr>
+              <tr>
+                <td>100053</td>
+                <td>谭丽娜</td>
+                <td>普通员工</td>
+                <td>21</td>
+                <td>2018/02/27</td>
+                <td>103500</td>
+              </tr>
+              <tr>
+                <td>100054</td>
+                <td>刘小雄</td>
+                <td>普通员工</td>
+                <td>30</td>
+                <td>2017/07/14</td>
+                <td>86500</td>
+              </tr>
+              <tr>
+                <td>100055</td>
+                <td>何成坤</td>
+                <td>普通员工</td>
+                <td>51</td>
+                <td>2017/11/13</td>
+                <td>183000</td>
+              </tr>
+              <tr>
+                <td>100056</td>
+                <td>秦漫银</td>
+                <td>普通员工</td>
+                <td>29</td>
+                <td>2017/06/27</td>
+                <td>183,000</td>
+              </tr>
+              <tr>
+                <td>100057</td>
+                <td>苏少等</td>
+                <td>普通员工</td>
+                <td>27</td>
+                <td>2017/01/25</td>
+                <td>112,000</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row d-print-none mt-2">
+            <div class="col-12 text-right"><a class="btn btn-primary" href="javascript:window.print();" target="_blank"><i class="fa fa-print"></i> 打印</a></div>
+          </div>
+        </section>
       </div>
-    </main>
-    <!-- Essential javascripts for application to work-->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- The javascript plugin to display page loading on top-->
-    <script src="js/plugins/pace.min.js"></script>
-    <!-- Page specific javascripts-->
-    <!-- Data table plugin-->
-    <script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript">$('#sampleTable').DataTable();</script>
-    <!-- Google analytics script-->
-    <script type="text/javascript">
-      if(document.location.hostname == 'pratikborsadiya.in') {
-      	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      	ga('create', 'UA-72504830-1', 'auto');
-      	ga('send', 'pageview');
-      }
-    </script>
-  </body>
+    </div>
+  </div>
+</main>
+<!-- Essential javascripts for application to work-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<!-- The javascript plugin to display page loading on top-->
+<script src="js/plugins/pace.min.js"></script>
+<!-- Page specific javascripts-->
+<!-- Data table plugin-->
+<script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript">$('#sampleTable').DataTable();</script>
+<!-- Google analytics script-->
+<script type="text/javascript">
+    if(document.location.hostname == 'pratikborsadiya.in') {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-72504830-1', 'auto');
+        ga('send', 'pageview');
+    }
+</script>
+</body>
 </html>
