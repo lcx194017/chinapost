@@ -17,6 +17,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Font-icon css-->
@@ -95,9 +96,9 @@
                 class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">员工信息</span><i
                 class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-                <li><a class="treeview-item active" href="single.html"><i class="icon fa fa-circle-o"></i>统计信息</a>
+                <li><a class="treeview-item " href="single.html"><i class="icon fa fa-circle-o"></i>统计信息</a>
                 </li>
-                <li><a class="treeview-item" href="single-date.html"><i class="icon fa fa-circle-o"></i>详细信息</a>
+                <li><a class="treeview-item active" href="single-date.html"><i class="icon fa fa-circle-o"></i>详细信息</a>
                 </li>
             </ul>
         </li>
@@ -111,15 +112,16 @@
         </div>
         <ul class="app-breadcrumb breadcrumb">
             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-            <li class="breadcrumb-item active">人员管理</li>
+            <li class="breadcrumb-item"><a href="single.html"></a>统计信息</li>
+            <li class="breadcrumb-item active">详细信息</li>
             <!--<li class="breadcrumb-item active"><a href="#">Simple Tables</a></li>-->
         </ul>
     </div>
     <div class="row">
 
         <div class="col-md-12">
-            <div class="tile" id="single">
-                <h3 class="tile-title">ID：1000001</h3>
+            <div class="tile" id="single-date">
+                <h3 class="tile-title">ID：1000001 日期：2018.3.23</h3>
                 <table class="table table-striped">
                     <thead>
                     <tr>
@@ -138,12 +140,12 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr v-for="(data, index) in employeeData.slice(startNumSet(),endNumSet())">
+                    <tr v-for="(data, index) in dateData.slice(startNumSet(),endNumSet())">
                         <td>
                             {{ index + 1 + startNumSet()}}
                         </td>
                         <td>
-                            <a href="single-date.html">{{ data.supplytime}}</a>
+                            {{ data.supplytime}}
                         </td>
                         <td>
                             {{data.employee}}
@@ -157,7 +159,7 @@
                 </table>
                 <div is="uib-pagination" :total-items="bigTotalItems"
                      v-model="pagination1" :max-size="maxSize"
-                     class="pagination-sm" :boundary-link-numbers="true"></div>
+                     class="pagination" :boundary-link-numbers="true"></div>
             </div>
         </div>
 
