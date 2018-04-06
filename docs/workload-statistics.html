@@ -203,26 +203,26 @@
     <div class="row">
 
         <div class="col-md-12">
-            <div class="tile" id="single">
+            <div class="tile" id="single" v-cloak>
                 <h3 class="tile-title">ID：1000001</h3>
                 <table class="table table-striped">
                     <thead>
-                    <tr>
+                    <tr align="center">
                         <th>
-                            #
+                            编号
                         </th>
                         <th>
-                            supplytime
+                            供件时间
                         </th>
                         <th>
-                            employee
+                            员工
                         </th>
                         <th>
-                            supplyflag
+                            供件台编号
                         </th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody align="center">
                     <tr v-for="(data, index) in employeeData.slice(startNumSet(),endNumSet())">
                         <td>
                             {{ index + 1 + startNumSet()}}
