@@ -193,189 +193,139 @@
                 <li><a class="treeview-item" href="page-mailbox.html"><i class="icon fa fa-circle-o"></i> 邮箱</a></li>
             </ul>
         </li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+                class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">作业区管理</span><i
+                class="treeview-indicator fa fa-angle-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="treeview-item" href="workspace-data.html"><i class="icon fa fa-circle-o"></i>基本信息</a></li>
+                <li><a class="treeview-item" href="workspace-statistics.html"><i class="icon fa fa-circle-o"></i>统计信息</a>
+                <li><a class="treeview-item" href="workspace-performance.html"><i class="icon fa fa-circle-o"></i>绩效考核</a>
+                </li>
+            </ul>
+        </li>
     </ul>
 </aside>
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-file-text-o"></i> 邮件分流报表</h1>
+            <h1><i class="fa fa-file-text-o"></i> 作业区详细信息</h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">
             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-            <li class="breadcrumb-item">邮件分流</li>
-            <li class="breadcrumb-item"><a href="#">分流报表生成</a></li>
+            <li class="breadcrumb-item">作业区管理</li>
+            <li class="breadcrumb-item"><a href="workspace-data.html">作业区基本信息</a></li>
+            <li class="breadcrumb-item">作业区详细信息</li>
         </ul>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="tile">
-                <section class="invoice">
-                    <div class="row mb-4">
-                        <div class="col-6">
-                            <h2 class="page-header"><i class="fa fa-globe"></i> EMS 南京航空集散中心</h2>
-                        </div>
-                        <div class="col-6">
-                            <h5 class="text-right">Date: 04/03/2018</h5>
-                        </div>
+                <div class="form-inline" style="margin-bottom: 10px">
+                    <div class="form-check">
+                        日期精度：
+                        <label><input type="radio" value="" name="optionDate">日 </label>
+                        <label><input type="radio" value="" name="optionDate" checked>月 </label>
+                        <label><input type="radio" value="" name="optionDate">年 </label>
                     </div>
-                    <div>
-                        <h3 align="center">邮件分流报表</h3>
+                    <div class="sub-header-margin-left">
+                        时间段：
+                        <input type="date" value="2018-01-13">
+                        至
+                        <input type="date" value="2018-04-03">
                     </div>
-                    <div class="row">
-                        <div class="col-12 table-responsive">
-                            <table class="table table-striped">
-                                <thead>
-                                <tr>
-                                    <th>邮件编号</th>
-                                    <th>邮件类别</th>
-                                    <th>重量</th>
-                                    <th>供件时间</th>
-                                    <th>操作人</th>
-                                    <th>供件口</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>100000001</td>
-                                    <td>扁平件</td>
-                                    <td>0.1kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>供件台A1</td>
-                                </tr>
-                                <tr>
-                                    <td>100000002</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>供件台A3</td>
-                                </tr>
-                                <tr>
-                                    <td>100000003</td>
-                                    <td>非标件</td>
-                                    <td>1.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>供件台A2</td>
-                                </tr>
-                                <tr>
-                                    <td>100000001</td>
-                                    <td>扁平件</td>
-                                    <td>0.1kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>供件台A1</td>
-                                </tr>
-                                <tr>
-                                    <td>100000002</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>供件台A3</td>
-                                </tr>
-                                <tr>
-                                    <td>100000003</td>
-                                    <td>非标件</td>
-                                    <td>1.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>供件台A2</td>
-                                </tr>
-                                <tr>
-                                    <td>100000001</td>
-                                    <td>扁平件</td>
-                                    <td>0.1kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>供件台A1</td>
-                                </tr>
-                                <tr>
-                                    <td>100000002</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>供件台A3</td>
-                                </tr>
-                                <tr>
-                                    <td>100000003</td>
-                                    <td>非标件</td>
-                                    <td>1.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>供件台A2</td>
-                                </tr>
-                                <tr>
-                                    <td>100000001</td>
-                                    <td>扁平件</td>
-                                    <td>0.1kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>供件台A1</td>
-                                </tr>
-                                <tr>
-                                    <td>100000002</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>供件台A3</td>
-                                </tr>
-                                <tr>
-                                    <td>100000003</td>
-                                    <td>非标件</td>
-                                    <td>1.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>供件台A2</td>
-                                </tr>
-                                <tr>
-                                    <td>100000001</td>
-                                    <td>扁平件</td>
-                                    <td>0.1kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>供件台A1</td>
-                                </tr>
-                                <tr>
-                                    <td>100000002</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>供件台A3</td>
-                                </tr>
-                                <tr>
-                                    <td>100000003</td>
-                                    <td>非标件</td>
-                                    <td>1.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>供件台A2</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="row d-print-none mt-2">
-                        <div class="col-12 text-right"><a class="btn btn-primary" href="javascript:window.print();"
-                                                          target="_blank"><i class="fa fa-print"></i> 打印</a></div>
-                    </div>
-                </section>
+
+
+                    <label class="sub-header-margin-left">
+                        作业区：
+                        <select class="form-control form-control-sm">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </label>
+                    <label class="sub-header-margin-left">
+                        大班组：
+                        <select class="form-control form-control-sm">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </label>
+                    <label class="sub-header-margin-left">
+                        小班组：
+                        <select class="form-control form-control-sm">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </label>
+                    <button class="btn btn-primary btn-sm sub-header-margin-left" type="button"><i class="fa fa-search"></i>查询</button>
+                </div>
+                <div class="tile-body" id="basic" v-cloak>
+                    <table class="table table-striped">
+                        <thead>
+                        <tr align="center">
+                            <th>
+                                编号
+                            </th>
+                            <th>
+                                供件时间
+                            </th>
+                            <th>
+                                员工
+                            </th>
+                            <th>
+                                供件台编号
+                            </th>
+
+                        </tr>
+                        </thead>
+                        <tbody align="center">
+                        <tr v-for="(data, index) in basicData.slice(startNumSet(),endNumSet())">
+                            <td>
+                                {{ index + 1 + startNumSet()}}
+                            </td>
+                            <td>
+                                {{ data.supplytime}}
+                            </td>
+                            <td>
+                                {{data.employee}}
+                            </td>
+                            <td>
+                                {{data.supplyflag}}
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    <div is="uib-pagination" :total-items="bigTotalItems"
+                         v-model="pagination1" :max-size="maxSize"
+                         class="pagination" :boundary-link-numbers="true"></div>
+
+
+                </div>
             </div>
         </div>
     </div>
 </main>
 <!-- Essential javascripts for application to work-->
+<script async="" src="//www.google-analytics.com/analytics.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<!--vue-->
+<script src="js/vue.js"></script>
+<script src="js/vuejs-uib-pagination.js"></script>
+
 <script src="js/main.js"></script>
+<script src="js/data.js"></script>
+<script src="js/workspace-data.js"></script>
 <!-- The javascript plugin to display page loading on top-->
 <script src="js/plugins/pace.min.js"></script>
 <!-- Page specific javascripts-->
+<script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript">$('#testsampleTable').DataTable();</script>
 <!-- Google analytics script-->
 <script type="text/javascript">
     if (document.location.hostname == 'pratikborsadiya.in') {
