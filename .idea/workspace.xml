@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3328ae07-bc51-4531-ae85-4895ff93b2e4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/workspace-administration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/workspace-cost-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/workspace-crew-scheduling-history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/workspace-crew-scheduling-plan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/workspace-data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/workspace-income-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/workspace-performance-data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/workspace-performance-statistics.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/export-statistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/export-statistics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/page-calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/page-calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/page-mailbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/page-mailbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/page-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/page-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/shunt-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/shunt-data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/shunt-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/shunt-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/shunt-statistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/shunt-statistics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sort-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/sort-data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sort-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/sort-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sort-statistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/sort-statistics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/wage-inquiries.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/wage-inquiries.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/workload-account.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/workload-account.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/workload-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/workload-details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/workload-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/workload-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/workload-statistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/workload-statistics.html" afterDir="false" />
@@ -20,11 +40,153 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="page-login.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docs/page-login.html">
+      <file leaf-file-name="workspace-performance-statistics.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/workspace-performance-statistics.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+            <state relative-caret-position="143">
+              <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#8;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="113" column="62" lean-forward="true" selection-start-line="113" selection-start-column="62" selection-end-line="113" selection-end-column="62" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace-crew-scheduling-history.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/workspace-crew-scheduling-history.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="664">
+              <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#main#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace-crew-scheduling-plan.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/workspace-crew-scheduling-plan.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="664">
+              <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#90#96#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace-data.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/workspace-data.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="664">
+              <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace-income-detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/workspace-income-detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="664">
+              <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace-performance-data.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/workspace-performance-data.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="664">
+              <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#4;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workload-statistics.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/workload-statistics.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace-cost-detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/workspace-cost-detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="457">
+              <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace-administration.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/workspace-administration.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#90#96#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,7 +206,7 @@
       <find>Setting</find>
       <find>show</find>
       <find>Rad</find>
-      <find>Example select</find>
+      <find />
       <find>pages</find>
       <find>left</find>
       <find>8</find>
@@ -55,6 +217,10 @@
       <find>row</find>
       <find>single-da</find>
       <find>table</find>
+      <find>print</find>
+      <find />
+      <find>heading</find>
+      <find>查看</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -71,11 +237,19 @@
         <option value="$PROJECT_DIR$/docs/report.html" />
         <option value="$PROJECT_DIR$/docs/blank-page.html" />
         <option value="$PROJECT_DIR$/docs/charts.html" />
+        <option value="$PROJECT_DIR$/docs/page-login.html" />
+        <option value="$PROJECT_DIR$/docs/page-lockscreen.html" />
+        <option value="$PROJECT_DIR$/docs/css/main.css" />
+        <option value="$PROJECT_DIR$/docs/workarea-crewscheduling-history.html" />
         <option value="$PROJECT_DIR$/docs/test.html" />
+        <option value="$PROJECT_DIR$/docs/ttt.html" />
+        <option value="$USER_HOME$/Desktop/vali-admin-master/vali-admin-master/docs/table-basic.html" />
+        <option value="$USER_HOME$/Desktop/vali-admin-master/vali-admin-master/docs/workspace-administration.html" />
         <option value="$PROJECT_DIR$/docs/index.html" />
         <option value="$PROJECT_DIR$/docs/export-statistics.html" />
         <option value="$PROJECT_DIR$/docs/page-calendar.html" />
         <option value="$PROJECT_DIR$/docs/page-mailbox.html" />
+        <option value="$PROJECT_DIR$/docs/page-user.html" />
         <option value="$PROJECT_DIR$/docs/shunt-data.html" />
         <option value="$PROJECT_DIR$/docs/shunt-report.html" />
         <option value="$PROJECT_DIR$/docs/shunt-statistics.html" />
@@ -84,12 +258,17 @@
         <option value="$PROJECT_DIR$/docs/sort-statistics.html" />
         <option value="$PROJECT_DIR$/docs/wage-inquiries.html" />
         <option value="$PROJECT_DIR$/docs/workload-account.html" />
-        <option value="$PROJECT_DIR$/docs/page-login.html" />
-        <option value="$PROJECT_DIR$/docs/page-lockscreen.html" />
-        <option value="$PROJECT_DIR$/docs/css/main.css" />
-        <option value="$PROJECT_DIR$/docs/workload-report.html" />
         <option value="$PROJECT_DIR$/docs/workload-details.html" />
+        <option value="$PROJECT_DIR$/docs/workload-report.html" />
         <option value="$PROJECT_DIR$/docs/workload-statistics.html" />
+        <option value="$PROJECT_DIR$/docs/workspace-administration.html" />
+        <option value="$PROJECT_DIR$/docs/workspace-cost-detail.html" />
+        <option value="$PROJECT_DIR$/docs/workspace-crew-scheduling-history.html" />
+        <option value="$PROJECT_DIR$/docs/workspace-crew-scheduling-plan.html" />
+        <option value="$PROJECT_DIR$/docs/workspace-data.html" />
+        <option value="$PROJECT_DIR$/docs/workspace-income-detail.html" />
+        <option value="$PROJECT_DIR$/docs/workspace-performance-data.html" />
+        <option value="$PROJECT_DIR$/docs/workspace-performance-statistics.html" />
       </list>
     </option>
   </component>
@@ -104,8 +283,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="19" />
+    <option name="y" value="71" />
     <option name="width" value="1456" />
     <option name="height" value="876" />
   </component>
@@ -115,7 +294,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -143,12 +321,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/demoZY" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/vali-admin-master" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -191,29 +370,33 @@
       <workItem from="1522741847361" duration="22144000" />
       <workItem from="1522808020369" duration="786000" />
       <workItem from="1522821389293" duration="3320000" />
-      <workItem from="1522996944328" duration="603000" />
+      <workItem from="1522996944328" duration="604000" />
+      <workItem from="1523104176042" duration="4020000" />
+      <workItem from="1523155774935" duration="22226000" />
+      <workItem from="1523324961675" duration="26000" />
+      <workItem from="1523328304184" duration="3451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69824000" />
+    <option name="totallyTimeSpent" value="99548000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24027778" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23958333" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="Grunt " order="4" side_tool="true" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -230,64 +413,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docs/page-lockscreen.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/wage-inquiries.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="151" column="28" selection-start-line="151" selection-start-column="24" selection-end-line="151" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/bootstrap-components.html" />
-    <entry file="file://$PROJECT_DIR$/docs/form-components.html" />
-    <entry file="file://$PROJECT_DIR$/docs/blank-page.html" />
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="128" column="12" selection-start-line="87" selection-start-column="4" selection-end-line="128" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/wage-inquiries.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="153" column="31" lean-forward="true" selection-start-line="153" selection-start-column="31" selection-end-line="153" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/bootstrap-components.html" />
-    <entry file="file://$PROJECT_DIR$/docs/blank-page.html" />
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1840">
-          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/charts.html" />
-    <entry file="file://$PROJECT_DIR$/docs/page-login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1265">
-          <caret line="55" column="116" selection-start-line="55" selection-start-column="116" selection-end-line="55" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/single.html" />
-    <entry file="file://$PROJECT_DIR$/docs/table-basic.html" />
-    <entry file="file://$PROJECT_DIR$/docs/charts.html" />
-    <entry file="file://$PROJECT_DIR$/docs/page-login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1265">
-          <caret line="55" column="116" selection-start-line="55" selection-start-column="116" selection-end-line="55" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/table-basic.html" />
     <entry file="file://$PROJECT_DIR$/docs/ui-cards.html" />
     <entry file="file://$PROJECT_DIR$/docs/form-samples.html" />
@@ -303,85 +428,7 @@
     <entry file="file://$PROJECT_DIR$/docs/bootstrap-components.html" />
     <entry file="file://$PROJECT_DIR$/docs/system-load.html" />
     <entry file="file://$PROJECT_DIR$/docs/page-invoice.html" />
-    <entry file="file://$PROJECT_DIR$/docs/test.html" />
     <entry file="file://$PROJECT_DIR$/docs/form-components.html" />
-    <entry file="file://$PROJECT_DIR$/docs/export-statistics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="193" column="8" selection-start-line="193" selection-start-column="8" selection-end-line="193" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/page-calendar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="190" column="12" selection-start-line="190" selection-start-column="12" selection-end-line="190" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/page-mailbox.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="190" column="12" selection-start-line="190" selection-start-column="12" selection-end-line="190" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/shunt-data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="190" column="8" selection-start-line="190" selection-start-column="8" selection-end-line="190" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/shunt-report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="190" column="8" selection-start-line="190" selection-start-column="8" selection-end-line="190" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/shunt-statistics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="193" column="8" selection-start-line="193" selection-start-column="8" selection-end-line="193" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/sort-data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="111" column="19" lean-forward="true" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/sort-report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="190" column="8" selection-start-line="190" selection-start-column="8" selection-end-line="190" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/sort-statistics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="193" column="8" selection-start-line="193" selection-start-column="8" selection-end-line="193" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/wage-inquiries.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="190" column="8" selection-start-line="190" selection-start-column="8" selection-end-line="190" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/page-lockscreen.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
@@ -389,45 +436,320 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/test.html" />
+    <entry file="file://$PROJECT_DIR$/docs/page-login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1265">
+          <caret line="55" column="71" selection-start-line="55" selection-start-column="71" selection-end-line="55" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/vali-admin-master/vali-admin-master/docs/page-invoice.html" />
+    <entry file="file://$USER_HOME$/Desktop/vali-admin-master/vali-admin-master/docs/form-components.html" />
+    <entry file="file://$USER_HOME$/Desktop/vali-admin-master/vali-admin-master/docs/bootstrap-components.html" />
+    <entry file="file://$USER_HOME$/Desktop/vali-admin-master/vali-admin-master/docs/blank-page.html" />
+    <entry file="file://$USER_HOME$/Desktop/vali-admin-master/vali-admin-master/docs/table-basic.html" />
+    <entry file="file://$USER_HOME$/Desktop/vali-admin-master/vali-admin-master/docs/table-data-table.html" />
+    <entry file="file://$USER_HOME$/Desktop/vali-admin-master/vali-admin-master/docs/workspace-administration.html" />
+    <entry file="file://$PROJECT_DIR$/docs/export-statistics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/page-calendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="213" column="12" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/page-lockscreen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/page-mailbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="213" column="12" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/page-user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="213" column="12" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/shunt-data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/shunt-report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/shunt-statistics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/sort-data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/sort-report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/sort-statistics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/wage-inquiries.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/workload-account.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-164">
-          <caret line="193" column="8" selection-start-line="193" selection-start-column="8" selection-end-line="193" selection-end-column="8" />
+        <state relative-caret-position="306">
+          <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/workload-details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="208" column="54" selection-start-line="208" selection-start-column="54" selection-end-line="208" selection-end-column="54" />
+        <state relative-caret-position="526">
+          <caret line="214" column="8" selection-start-line="214" selection-start-column="8" selection-end-line="214" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/workload-report.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="223" column="63" lean-forward="true" selection-start-line="223" selection-start-column="63" selection-end-line="223" selection-end-column="63" />
+        <state relative-caret-position="286">
+          <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/workload-statistics.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="197" column="77" lean-forward="true" selection-start-line="197" selection-start-column="77" selection-end-line="197" selection-end-column="77" />
+        <state relative-caret-position="162">
+          <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/workspace-administration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#90#96#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/workspace-cost-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/workspace-crew-scheduling-history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/workspace-crew-scheduling-plan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#90#96#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/workspace-data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/workspace-income-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/workspace-performance-data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#4;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/workspace-performance-statistics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#8;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="29" selection-start-line="29" selection-end-line="193" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/page-login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+        <state relative-caret-position="161">
+          <caret line="113" column="62" lean-forward="true" selection-start-line="113" selection-start-column="62" selection-end-line="113" selection-end-column="62" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

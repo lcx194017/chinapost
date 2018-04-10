@@ -15,7 +15,7 @@
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description"
           content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Basic Tables - Vali Admin</title>
+    <title>Charts - Vali Admin</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -218,288 +218,23 @@
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-th-list"></i>工作量排行</h1>
+            <h1><i class="fa fa-bar-chart-o"></i> 绩效考核统计</h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">
             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-            <li class="breadcrumb-item active">员工调度</a></li>
-            <li class="breadcrumb-item active"><a href="#">工作量排行</a></li>
+            <li class="breadcrumb-item"> 作业区管理</li>
+            <li class="breadcrumb-item"><a href="#"> 绩效考核统计</a></li>
         </ul>
     </div>
     <div class="row">
-        <div class="col-md-6">
-            <div class="tile">
-                <h3 class="tile-title">日排行(2018.03.29)</h3>
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>员工编号</th>
-                        <th>姓名</th>
-                        <th>职位</th>
-                        <th>派件量(/件)</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>100006</td>
-                        <td>郭一凡</td>
-                        <td>普通员工</td>
-                        <td>175</td>
-                    </tr>
-                    <tr>
-                        <td>100002</td>
-                        <td>施长江</td>
-                        <td>普通员工</td>
-                        <td>170</td>
-                    </tr>
-                    <tr>
-                        <td>100003</td>
-                        <td>杨奇</td>
-                        <td>普通员工</td>
-                        <td>169</td>
-                    </tr>
-                    <tr>
-                        <td>100007</td>
-                        <td>王春梅</td>
-                        <td>普通员工</td>
-                        <td>166</td>
-                    </tr>
-                    <tr>
-                        <td>100008</td>
-                        <td>黄鹏</td>
-                        <td>普通员工</td>
-                        <td>163</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="tile">
+            <h3 class="tile-title" align="center">按班组绩效考核(2018.04.09)</h3>
+            <div id="workspace-performance-by-group" style="width: 1000px; height: 500px;"></div>
         </div>
-        <div class="col-md-6">
-            <div class="tile">
-                <h3 class="tile-title">周排行</h3>
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>员工编号</th>
-                        <th>姓名</th>
-                        <th>职位</th>
-                        <th>派件量(/件)</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>100008</td>
-                        <td>黄鹏</td>
-                        <td>普通员工</td>
-                        <td>800</td>
-                    </tr>
-                    <tr>
-                        <td>100003</td>
-                        <td>杨奇</td>
-                        <td>普通员工</td>
-                        <td>797</td>
-                    </tr>
-                    <tr>
-                        <td>100001</td>
-                        <td>潘祥</td>
-                        <td>普通员工</td>
-                        <td>794</td>
-                    </tr>
-                    <tr>
-                        <td>100006</td>
-                        <td>郭一凡</td>
-                        <td>普通员工</td>
-                        <td>781</td>
-                    </tr>
-                    <tr>
-                        <td>100004</td>
-                        <td>刘修军</td>
-                        <td>普通员工</td>
-                        <td>779</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-        <div class="col-md-10">
-            <div class="tile">
-                <h3 class="tile-title">月排行</h3>
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>员工编号</th>
-                        <th>姓名</th>
-                        <th>性别</th>
-                        <th>年龄</th>
-                        <th>职位</th>
-                        <th>月工作量(/件)</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="table-info">
-                        <td>100010</td>
-                        <td>王丽</td>
-                        <td>女</td>
-                        <td>30</td>
-                        <td>高级员工</td>
-                        <td>5120</td>
-                    </tr>
-                    <tr class="table-success">
-                        <td>100002</td>
-                        <td>施长江</td>
-                        <td>男</td>
-                        <td>29</td>
-                        <td>普通员工</td>
-                        <td>5015</td>
-                    </tr>
-                    <tr class="table-danger">
-                        <td>100006</td>
-                        <td>郭一凡</td>
-                        <td>男</td>
-                        <td>41</td>
-                        <td>高级员工</td>
-                        <td>4992</td>
-                    </tr>
-                    <tr class="table-warning">
-                        <td>100003</td>
-                        <td>杨奇</td>
-                        <td>女</td>
-                        <td>25</td>
-                        <td>普通员工</td>
-                        <td>4800</td>
-                    </tr>
-                    <tr class="table-secondary">
-                        <td>100008</td>
-                        <td>黄鹏</td>
-                        <td>男</td>
-                        <td>33</td>
-                        <td>高级员工</td>
-                        <td>4776</td>
-                    </tr>
-                    <tr class="table-primary">
-                        <td>100007</td>
-                        <td>王春梅</td>
-                        <td>女</td>
-                        <td>38</td>
-                        <td>普通员工</td>
-                        <td>4723</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <label for="exampleSelect1">月份选择</label>
-            <select class="form-control" id="exampleSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-            </select>
-            <button class="btn btn-primary" type="button">查询</button>
-        </div>
-        <div class="clearfix"></div>
-        <div class="col-md-12">
-            <div class="tile">
-                <h3 class="tile-title">年度排行</h3>
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th>员工编号</th>
-                            <th>姓名</th>
-                            <th>性别</th>
-                            <th>年龄</th>
-                            <th>职位</th>
-                            <th>工作量(/件)</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>100010</td>
-                            <td>王丽</td>
-                            <td>女</td>
-                            <td>30</td>
-                            <td>高级员工</td>
-                            <td>51020</td>
-                        </tr>
-                        <tr>
-                            <td>100002</td>
-                            <td>施长江</td>
-                            <td>男</td>
-                            <td>29</td>
-                            <td>普通员工</td>
-                            <td>50150</td>
-                        </tr>
-                        <tr>
-                            <td>100006</td>
-                            <td>郭一凡</td>
-                            <td>男</td>
-                            <td>41</td>
-                            <td>高级员工</td>
-                            <td>49092</td>
-                        </tr>
-                        <tr>
-                            <td>100003</td>
-                            <td>杨奇</td>
-                            <td>女</td>
-                            <td>25</td>
-                            <td>普通员工</td>
-                            <td>48000</td>
-                        </tr>
-                        <tr>
-                            <td>100008</td>
-                            <td>黄鹏</td>
-                            <td>男</td>
-                            <td>33</td>
-                            <td>高级员工</td>
-                            <td>47760</td>
-                        </tr>
-                        <tr>
-                            <td>100007</td>
-                            <td>王春梅</td>
-                            <td>女</td>
-                            <td>38</td>
-                            <td>普通员工</td>
-                            <td>47230</td>
-                        </tr>
-                        <tr>
-                            <td>100009</td>
-                            <td>陈长新</td>
-                            <td>男</td>
-                            <td>33</td>
-                            <td>普通员工</td>
-                            <td>47219</td>
-                        </tr>
-                        <tr>
-                            <td>100001</td>
-                            <td>潘祥</td>
-                            <td>男</td>
-                            <td>37</td>
-                            <td>普通员工</td>
-                            <td>47213</td>
-                        </tr>
-                        <tr>
-                            <td>100004</td>
-                            <td>刘修军</td>
-                            <td>男</td>
-                            <td>40</td>
-                            <td>普通员工</td>
-                            <td>47119</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+
+        <div class="tile">
+            <h3 class="tile-title" align="center">按航线绩效考核(2018.04.09)</h3>
+            <div id="workspace-performance-by-airline" style="width: 1000px; height: 500px;"></div>
         </div>
     </div>
 </main>
@@ -508,9 +243,477 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/echarts.js"></script>
 <!-- The javascript plugin to display page loading on top-->
 <script src="js/plugins/pace.min.js"></script>
 <!-- Page specific javascripts-->
+<script type="text/javascript" src="js/plugins/chart.js"></script>
+
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('workspace-performance-by-group'));
+    var Name = ['赶发率(%)', '装载率(%)', '漏件(件)'];
+    var color = ['#fb734e', '#e32f46', '#94d96c', '#0bbcb7', '#1a9bfc', '#7049f0'];
+    var data = {
+        "作业区一班组一": [90, 60, 10],
+        "作业区一班组二": [93, 93, 20],
+        "作业区一班组三": [97, 87, 13],
+        "作业区一班组四": [96, 76, 17],
+    };
+
+    var xAxisData = [];
+    var data1 = [],
+        data2 = [],
+        data3 = [];
+    for (var i in data) {
+        xAxisData.push(i);
+        data1.push(data[i][0])
+        data2.push(data[i][1])
+        data3.push(data[i][2])
+    }
+
+    var label = {
+        normal: {
+            show: false,
+            position: 'right',
+            distance: 10,
+            formatter: function (param) {
+                return param.value + '%';
+            },
+            textStyle: {
+                color: '#ffffff',
+                fontSize: '16',
+            }
+        }
+    };
+
+
+    var series = [];
+    for (var j = 1; j < 4; j++) {
+        if (j == 1) {
+            var symbolOffset = [-48, 0];
+            var dataArr = data1
+        } else if (j == 2) {
+            var symbolOffset = [0, 0];
+            var dataArr = data2
+        } else if (j == 3) {
+            var symbolOffset = [48, 0];
+            var dataArr = data3
+        }
+
+        series.push({
+            name: Name[j - 1],
+            type: 'bar',
+            stack: j,
+            xAxisIndex: 0,
+            data: dataArr,
+            label: label,
+            barWidth: 8,
+            barGap: 5,
+            itemStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: color[j * 2 - 2]
+                    }, {
+                        offset: 1,
+                        color: color[j * 2 - 1]
+                    }]),
+                }
+            },
+            z: 2
+        }, {
+            name: Name[j - 1],
+            type: 'scatter',
+            stack: j,
+            xAxisIndex: 0,
+            symbolOffset: symbolOffset, //相对于原本位置的偏移量
+            data: [0, 0, 0, 0],
+            label: {
+                normal: {
+                    show: false,
+                }
+            },
+            xAxisIndex: 2,
+            symbolSize: 14,
+            itemStyle: {
+                normal: {
+                    borderColor: '#fff',
+                    borderWidth: 2,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: color[j * 2 - 2]
+                    }, {
+                        offset: 1,
+                        color: color[j * 2 - 1]
+                    }]),
+                    opacity: 1,
+                }
+            },
+            z: 2
+        }, {
+            name: Name[j - 1],
+            type: 'bar',
+            xAxisIndex: 1,
+            barGap: '140%',
+            data: [dataArr[0] + 15, dataArr[1] + 15, dataArr[2] + 15, dataArr[3] + 15,],
+            barWidth: 20,
+            itemStyle: {
+                normal: {
+                    color: '#0e2147',
+                    barBorderRadius: 5,
+                }
+            },
+            z: 1
+        }, {
+            name: Name[j - 1],
+            type: 'bar',
+            xAxisIndex: 2,
+            data: [dataArr[0] + 15.5, dataArr[1] + 15.5, dataArr[2] + 15.5, dataArr[3] + 15.5,],
+            barWidth: 24,
+            barGap: 1,
+            itemStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: color[j * 2 - 2]
+                    }, {
+                        offset: 1,
+                        color: color[j * 2 - 1]
+                    }]),
+                    barBorderRadius: 5,
+                }
+            },
+            z: 0
+        }, {
+            name: Name[j - 1],
+            type: 'scatter',
+            hoverAnimation: false,
+            data: [1.2, 1.2, 1.2, 1.2],
+            xAxisIndex: 2,
+            symbolOffset: symbolOffset, //相对于原本位置的偏移量
+            symbolSize: 24,
+            itemStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: color[j * 2 - 2]
+                    }, {
+                        offset: 1,
+                        color: color[j * 2 - 1]
+                    }]),
+                    opacity: 1,
+                }
+            },
+            z: 2
+        })
+    }
+    var option = {
+        backgroundColor: '#142058',
+        title: {
+            text: '',
+            x: '10',
+            y: '10',
+            textStyle: {
+                fontWeight: 'normal',
+                fontSize: 24,
+                color: "#fff",
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '3%',
+            bottom: '10%',
+            top: '10%',
+            containLabel: true
+        },
+        tooltip: {
+            show: "true",
+            trigger: 'axis',
+            axisPointer: { // 坐标轴指示器，坐标轴触发有效
+                type: 'shadow', // 默认为直线，可选为：'line' | 'shadow'
+                shadowStyle: {
+                    color: 'rgba(112,112,112,0)',
+                },
+            },
+            formatter: function (params) {
+                var unit = params[0].name.substring(params[0].name.indexOf('(') + 1, params[0].name.indexOf(')'));
+                return params[0].name + ' ：<br />' + params[0].seriesName + ' ：' + params[0].data + unit + '<br />' + params[1].seriesName + ' ：' + params[1].data + unit + '<br />' + params[2].seriesName + ' ：' + params[2].data + unit;
+            },
+            backgroundColor: 'rgba(0,0,0,0.7)', // 背景
+            padding: [8, 10], //内边距
+            extraCssText: 'box-shadow: 0 0 3px rgba(255, 255, 255, 0.4);', //添加阴影
+        },
+        legend: {
+            top: 20,
+            textStyle: {
+                color: '#fff',
+            },
+            data: Name,
+        },
+        xAxis: [{
+            type: 'category',
+            axisTick: {
+                show: false
+            },
+            axisLine: {
+                show: true,
+                lineStyle: {
+                    color: '#363e83',
+                }
+            },
+            axisLabel: {
+                inside: false,
+                textStyle: {
+                    color: '#bac0c0',
+                    fontWeight: 'normal',
+                    fontSize: '12',
+                },
+            },
+            data: xAxisData
+        }, {
+            type: 'category',
+            axisLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            },
+            axisLabel: {
+                show: false
+            },
+            splitArea: {
+                show: false
+            },
+            splitLine: {
+                show: false
+            },
+            data: xAxisData
+        }, {
+            type: 'category',
+            axisLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            },
+            axisLabel: {
+                show: false
+            },
+            splitArea: {
+                show: false
+            },
+            splitLine: {
+                show: false
+            },
+            data: xAxisData
+        }],
+        yAxis: {
+            type: 'value',
+            axisTick: {
+                show: false
+            },
+            axisLine: {
+                show: true,
+                lineStyle: {
+                    color: '#32346c',
+                }
+            },
+            splitLine: {
+                show: true,
+                lineStyle: {
+                    color: '#32346c ',
+                }
+            },
+            axisLabel: {
+                textStyle: {
+                    color: '#bac0c0',
+                    fontWeight: 'normal',
+                    fontSize: '12',
+                },
+            },
+        },
+        series: series
+    };
+    myChart.setOption(option);
+</script>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('workspace-performance-by-airline'));
+    var option = {
+        backgroundColor: '#23243a',
+        tooltip: { //提示框组件
+            trigger: 'axis',
+            formatter: '{b}<br />{a0}: {c0}<br />{a1}: {c1}',
+            axisPointer: {
+                type: 'shadow',
+                label: {
+                    backgroundColor: '#6a7985'
+                }
+            },
+            textStyle: {
+                color: '#fff',
+                fontStyle: 'normal',
+                fontFamily: '微软雅黑',
+                fontSize: 12,
+            }
+        },
+        grid: {
+            left: '1%',
+            right: '4%',
+            bottom: '6%',
+            top:30,
+            padding:'0 0 10 0',
+            containLabel: true,
+        },
+        legend: {//图例组件，颜色和名字
+            right:10,
+            top:0,
+            itemGap: 16,
+            itemWidth: 18,
+            itemHeight: 10,
+            data:[{
+                name:'赶发率(%)',
+                //icon:'image://../wwwroot/js/url2.png', //路径
+            },
+                {
+                    name:'装载率(%)',
+                }],
+            textStyle: {
+                color: '#a8aab0',
+                fontStyle: 'normal',
+                fontFamily: '微软雅黑',
+                fontSize: 12,
+            }
+        },
+        xAxis: [
+            {
+                type: 'category',
+                boundaryGap: true,//坐标轴两边留白
+                data: ['航线1', '航线2', '航线3', '航线4', '航线5', '航线6', '航线7', '航线8', '航线9', '航线10'],
+                axisLabel: { //坐标轴刻度标签的相关设置。
+                    interval: 0,//设置为 1，表示『隔一个标签显示一个标签』
+                    margin:15,
+                    textStyle: {
+                        color: '#078ceb',
+                        fontStyle: 'normal',
+                        fontFamily: '微软雅黑',
+                        fontSize: 12,
+                    }
+                },
+                axisTick:{//坐标轴刻度相关设置。
+                    show: false,
+                },
+                axisLine:{//坐标轴轴线相关设置
+                    lineStyle:{
+                        color:'#fff',
+                        opacity:0.2
+                    }
+                },
+                splitLine: { //坐标轴在 grid 区域中的分隔线。
+                    show: false,
+                }
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value',
+                splitNumber: 5,
+                axisLabel: {
+                    textStyle: {
+                        color: '#a8aab0',
+                        fontStyle: 'normal',
+                        fontFamily: '微软雅黑',
+                        fontSize: 12,
+                    }
+                },
+                axisLine:{
+                    show: false
+                },
+                axisTick:{
+                    show: false
+                },
+                splitLine: {
+                    show: true,
+                    lineStyle: {
+                        color: ['#fff'],
+                        opacity:0.06
+                    }
+                }
+
+            }
+        ],
+        series : [
+            {
+                name:'赶发率(%)',
+                type:'bar',
+                data:[89, 73, 92, 86, 77, 76, 92, 96, 96, 64],
+                barWidth: 10,
+                barGap:0,//柱间距离
+                label: {//图形上的文本标签
+                    normal: {
+                        show: true,
+                        position: 'top',
+                        textStyle: {
+                            color: '#a8aab0',
+                            fontStyle: 'normal',
+                            fontFamily: '微软雅黑',
+                            fontSize: 12,
+                        },
+                    },
+                },
+                itemStyle: {//图形样式
+                    normal: {
+                        barBorderRadius: [5, 5, 0, 0],
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 1, color: 'rgba(127, 128, 225, 0.7)'
+                        },{
+                            offset: 0.9, color: 'rgba(72, 73, 181, 0.7)'
+                        },{
+                            offset: 0.31, color: 'rgba(0, 208, 208, 0.7)'
+                        },{
+                            offset: 0.15, color: 'rgba(0, 208, 208, 0.7)'
+                        }, {
+                            offset: 0, color: 'rgba(104, 253, 255, 0.7)'
+                        }], false),
+                    },
+                },
+            },
+            {
+                name:'装载率(%)',
+                type:'bar',
+                data:[90, 95, 84, 87, 77, 96, 92, 97, 98, 80],
+                barWidth: 10,
+                barGap:0.2,//柱间距离
+                label: {//图形上的文本标签
+                    normal: {
+                        show: true,
+                        position: 'top',
+                        textStyle: {
+                            color: '#a8aab0',
+                            fontStyle: 'normal',
+                            fontFamily: '微软雅黑',
+                            fontSize: 12,
+                        },
+                    },
+                },
+                itemStyle: {//图形样式
+                    normal: {
+                        barBorderRadius: [5, 5, 0, 0],
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 1, color: 'rgba(127, 128, 225, 0.7)'
+                        },{
+                            offset: 0.9, color: 'rgba(72, 73, 181, 0.7)'
+                        },{
+                            offset: 0.25, color: 'rgba(226, 99, 74, 0.7)'
+                        }, {
+                            offset: 0, color: 'rgba(253, 200, 106, 0.7)'
+                        }], false),
+                    },
+                },
+            }
+        ]
+    };
+    myChart.setOption(option);
+</script>
 <!-- Google analytics script-->
 <script type="text/javascript">
     if (document.location.hostname == 'pratikborsadiya.in') {

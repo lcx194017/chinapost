@@ -13,7 +13,7 @@
     <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Invoice - Vali Admin</title>
+    <title>Data Table - Vali Admin</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -215,193 +215,99 @@
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-file-text-o"></i> 邮件分拣报表</h1>
+            <h1><i class="fa fa-th-list"></i> 人员调度</h1>
         </div>
-        <ul class="app-breadcrumb breadcrumb">
+        <ul class="app-breadcrumb breadcrumb side">
             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-            <li class="breadcrumb-item">邮件分拣</li>
-            <li class="breadcrumb-item"><a href="#">分拣报表生成</a></li>
+            <li class="breadcrumb-item"> 作业区管理</li>
+            <li class="breadcrumb-item active"><a href="#">人员调度</a></li>
         </ul>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="tile">
-                <section class="invoice">
-                    <div class="row mb-4">
-                        <div class="col-6">
-                            <h2 class="page-header"><i class="fa fa-globe"></i> EMS 南京航空集散中心</h2>
-                        </div>
-                        <div class="col-6">
-                            <h5 class="text-right">Date: 04/03/2018</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 align="center">邮件分拣报表</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 table-responsive">
-                            <table class="table table-striped">
-                                <thead align="center">
-                                <tr>
-                                    <th>邮件编号</th>
-                                    <th>邮件类别</th>
-                                    <th>重量</th>
-                                    <th>分拣时间</th>
-                                    <th>操作人</th>
-                                    <th>分拣机编号</th>
-                                    <th>航班/车次</th>
-                                    <th>路向</th>
-                                </tr>
-                                </thead>
-                                <tbody align="center">
-                                <tr>
-                                    <td>100000001</td>
-                                    <td>扁平件</td>
-                                    <td>0.1kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100001</td>
-                                    <td>S1</td>
-                                    <td>CF9072</td>
-                                    <td>南京集散-福州</td>
-                                </tr>
-                                <tr>
-                                    <td>100000002</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100005</td>
-                                    <td>S1</td>
-                                    <td>CA1084</td>
-                                    <td>南京集散-北京</td>
-                                </tr>
-                                <tr>
-                                    <td>100000003</td>
-                                    <td>非标件</td>
-                                    <td>1.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>S1</td>
-                                    <td>CA1086</td>
-                                    <td>南京集散-长沙</td>
-                                </tr>
-                                <tr>
-                                    <td>100000004</td>
-                                    <td>扁平件</td>
-                                    <td>3.1kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100007</td>
-                                    <td>S1</td>
-                                    <td>CF9012</td>
-                                    <td>南京集散-成都</td>
-                                </tr>
-                                <tr>
-                                    <td>100000005</td>
-                                    <td>非标件</td>
-                                    <td>0.7kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>S1</td>
-                                    <td>CA1090</td>
-                                    <td>南京集散-广州</td>
-                                </tr>
-                                <tr>
-                                    <td>100000006</td>
-                                    <td>非标件</td>
-                                    <td>1.4kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100006</td>
-                                    <td>S1</td>
-                                    <td>CF9034</td>
-                                    <td>南京集散-乌市</td>
-                                </tr>
-                                <tr>
-                                    <td>100000007</td>
-                                    <td>标准件</td>
-                                    <td>0.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100009</td>
-                                    <td>S1</td>
-                                    <td>CF9038</td>
-                                    <td>南京集散-郑州</td>
-                                </tr>
-                                <tr>
-                                    <td>100000008</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>S1</td>
-                                    <td>CF9092</td>
-                                    <td>南京集散-安庆</td>
-                                </tr>
-                                <tr>
-                                    <td>100000009</td>
-                                    <td>扁平件</td>
-                                    <td>0.8kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100009</td>
-                                    <td>S1</td>
-                                    <td>CF9080</td>
-                                    <td>南京集散-青岛</td>
-                                </tr>
-                                <tr>
-                                    <td>100000005</td>
-                                    <td>非标件</td>
-                                    <td>0.7kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>S1</td>
-                                    <td>CA1090</td>
-                                    <td>南京集散-广州</td>
-                                </tr>
-                                <tr>
-                                    <td>100000006</td>
-                                    <td>非标件</td>
-                                    <td>1.4kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100006</td>
-                                    <td>S1</td>
-                                    <td>CF9034</td>
-                                    <td>南京集散-乌市</td>
-                                </tr>
-                                <tr>
-                                    <td>100000007</td>
-                                    <td>标准件</td>
-                                    <td>0.2kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100009</td>
-                                    <td>S1</td>
-                                    <td>CF9038</td>
-                                    <td>南京集散-郑州</td>
-                                </tr>
-                                <tr>
-                                    <td>100000008</td>
-                                    <td>标准件</td>
-                                    <td>0.5kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100004</td>
-                                    <td>S1</td>
-                                    <td>CF9092</td>
-                                    <td>南京集散-安庆</td>
-                                </tr>
-                                <tr>
-                                    <td>100000009</td>
-                                    <td>扁平件</td>
-                                    <td>0.8kg</td>
-                                    <td>2017-04-25 00:30:25</td>
-                                    <td>100009</td>
-                                    <td>S1</td>
-                                    <td>CF9080</td>
-                                    <td>南京集散-青岛</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="row d-print-none mt-2">
-                        <div class="col-12 text-right"><a class="btn btn-primary" href="javascript:window.print();" target="_blank"><i class="fa fa-print"></i> 打印</a></div>
-                    </div>
-                </section>
+                <h3 class="tile-title" align="center">人员调度计划</h3>
+                <div style="margin-bottom: 5px;">
+                    <button class="btn btn-info" type="button" id="add_item" onclick="add_new_item()"></span>新增员工调度</button>
+                </div>
+                <div class="tile-body">
+                    <table class="table table-hover table-bordered" id="scheduling_table">
+                        <thead align="center">
+                        <tr>
+                            <th>员工编号</th>
+                            <th>姓名</th>
+                            <th>原岗位</th>
+                            <th>目标岗位</th>
+                            <th>生效时间</th>
+                            <th>操作人</th>
+                            <th>操作时间</th>
+                            <th>编辑</th>
+                        </tr>
+                        </thead>
+                        <tbody align="center">
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组一，小班组一</td>
+                            <td>作业区二，大班组二，小班组二</td>
+                            <td>2018.04.01</td>
+                            <td>王二</td>
+                            <td>2018-04-08 10:50:55</td>
+                            <td>
+                                <input type='button' value='修改' class='btn btn-warning btn-sm' onclick='modify(this)'>&nbsp;<input type='button' value='删除' class='btn btn-danger btn-sm'  onclick='delete_notify(this)'>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10000002</td>
+                            <td>赵昱涵</td>
+                            <td>作业区一，大班组一，小班组二</td>
+                            <td>作业区二，大班组一，小班组二</td>
+                            <td>2018.04.01</td>
+                            <td>王二</td>
+                            <td>2018-04-08 11:50:55</td>
+                            <td>
+                                <input type='button' value='修改' class='btn btn-warning btn-sm' onclick='modify(this)'>&nbsp;<input type='button' value='删除' class='btn btn-danger btn-sm'  onclick='delete_notify(this)'>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10000003</td>
+                            <td>李笑笑</td>
+                            <td>作业区一，大班组一，小班组一</td>
+                            <td>作业区一，大班组一，小班组二</td>
+                            <td>2018.04.01</td>
+                            <td>王二</td>
+                            <td>2018-04-08 12:50:55</td>
+                            <td>
+                                <input type='button' value='修改' class='btn btn-warning btn-sm' onclick='modify(this)'>&nbsp;<input type='button' value='删除' class='btn btn-danger btn-sm'  onclick='delete_notify(this)'>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10000004</td>
+                            <td>张琰昊</td>
+                            <td>作业区一，大班组二，小班组一</td>
+                            <td>作业区二，大班组二，小班组二</td>
+                            <td>2018.04.01</td>
+                            <td>王二</td>
+                            <td>2018-04-08 13:50:55</td>
+                            <td>
+                                <input  type='button' value='修改' class='btn btn-warning btn-sm' onclick='modify(this)'>&nbsp;<input type='button' value='删除' class='btn btn-danger btn-sm'  onclick='delete_notify(this)'>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10000005</td>
+                            <td>王铭浩</td>
+                            <td>作业区一，大班组一，小班组一</td>
+                            <td>作业区二，大班组二，小班组二</td>
+                            <td>2018.04.01</td>
+                            <td>王二</td>
+                            <td>2018-04-08 14:50:55</td>
+                            <td>
+                                <input type='button' value='修改' class='btn btn-warning btn-sm' onclick='modify(this)'>&nbsp;<input type='button' value='删除' class='btn btn-danger btn-sm' onclick='delete_notify(this)'>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -414,6 +320,196 @@
 <!-- The javascript plugin to display page loading on top-->
 <script src="js/plugins/pace.min.js"></script>
 <!-- Page specific javascripts-->
+<!-- Data table plugin-->
+<script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="js/plugins/bootstrap-notify.min.js"></script>
+<script type="text/javascript" src="js/plugins/sweetalert.min.js"></script>
+<script type="text/javascript">$('#scheduling_table').DataTable();</script>
+
+<!--弹框-->
+<script src="js/layer/layer.js"></script>
+<!--表格的增删查改-->
+<script>
+    var new_item = [{'employee_id': 10000001, 'name': 'admin', 's_post': 'null', 'd_post': 'null',
+        'entry_into_force_time': '2018-01-01', 'operator': 'admin', 'operation_time': '2018-01-01'}];
+    var k = 0;
+    function add_new_item() {
+        layer.open({
+            btn: ['添加', '取消'],
+            formType: 2,
+            title: ['新增人员调度', 'font-size:18px;'],
+            content: '员工编号:<input id="employee_id" type="text" class="form-control">' +
+            '姓名:<input id="name" type="text" class="form-control">' +
+            '原岗位:<input id="s_post" type="text" class="form-control">' +
+            '目标岗位：<select id="d_district" class=" form-control"><option value="作业区一">作业区一</option> <option value="作业区二">作业区二</option><option value="作业区三">作业区三</option></select>' +
+            '<select id="d_group" class=" form-control"><option value="大班组一">大班组一</option> <option value="大班组二">大班组二</option></select>' +
+            '<select id="d_party" class=" form-control"><option value="小班组一">小班组一</option> <option value="小班组二">小班组二</option></select>' +
+            '生效时间:<input id="entry_time" type="date" class="form-control">' +
+            '操作人:<input id="operator" type="text" class="form-control">',
+            yes: function (index) {
+
+                var $tr = $("<tr id='" + k + "'></tr>");
+                k++;
+                var $td1 = $("<td>" + $("#employee_id").val() + "</td>");
+                var $td2 = $("<td>" + $("#name").val() + "</td>");
+                var $td3 = $("<td>" + $("#s_post").val() + "</td>");
+                var $td4 = $("<td>" + $("#d_district").val() + "，" + $("#d_group").val() + "，" + $("#d_party").val() + "</td>");
+                var $td5 = $("<td>" + $("#entry_time").val() + "</td>");
+                var $td6 = $("<td>" + $("#operator").val() + "</td>");
+                var $td7 = $("<td>" + getNowFormatDate() + "</td>");
+                var $td8 = $("<td><input type='button' value='修改' class='btn btn-warning btn-sm' onclick='modify(this)'>&nbsp;<input type='button' value='删除' class='btn btn-danger btn-sm' onclick='delete_notify(this)'></td>");
+
+                $tr.append($td1);
+                $tr.append($td2);
+                $tr.append($td3);
+                $tr.append($td4);
+                $tr.append($td5);
+                $tr.append($td6);
+                $tr.append($td7);
+                $tr.append($td8);
+
+                $("#scheduling_table").append($tr);
+
+                new_item.push({
+                    'employee_id': $td1,
+                    'name': $td2,
+                    's_post': $td3,
+                    'd_post': $td4,
+                    'entry_into_force_time': $td5,
+                    'operator': $td6,
+                    'operation_time': $td7
+                });
+                layer.close(index);
+                add_notify();
+            }
+        });
+    }
+
+    // 获取当前的日期时间 格式“yyyy-MM-dd HH:MM:SS”
+    function getNowFormatDate() {
+        var date = new Date();
+        var seperator1 = "-";
+        var seperator2 = ":";
+        var month = date.getMonth() + 1;
+        var strDate = date.getDate();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var seconds = date.getSeconds();
+
+        if (month >= 1 && month <= 9) {
+            month = "0" + month;
+        }
+        if (strDate >= 0 && strDate <= 9) {
+            strDate = "0" + strDate;
+        }
+        if (hours >= 0 && hours <= 9) {
+            hours = "0" + hours;
+        }
+        if (minutes >= 0 && minutes <= 9) {
+            minutes = "0" + minutes;
+        }
+        if (seconds >= 0 && seconds <= 9) {
+            seconds = "0" + seconds;
+        }
+
+        var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+            + " " + hours + seperator2 + minutes + seperator2 + seconds;
+        return currentdate;
+    }
+
+
+
+    function modify(cell) {
+        layer.open({
+            btn: ['修改','取消'],
+            formType:2,
+            title: ['修改人员调度', 'font-size:18px;'],
+            content: '员工编号:<input id="employee_id" type="text"  value="' + $(cell).parent().siblings("td").eq(0).text() + '" class="form-control">' +
+            '姓名:<input id="name" type="text" value="' + $(cell).parent().siblings("td").eq(1).text() + '" class="form-control">' +
+            '原岗位:<input id="s_post" type="text" value="' + $(cell).parent().siblings("td").eq(2).text() + '" class="form-control">' +
+            '目标岗位：<select id="d_district" class=" form-control"><option value="作业区一">作业区一</option> <option value="作业区二">作业区二</option><option value="作业区三">作业区三</option></select>'+
+            '<select id="d_group" class=" form-control"><option value="大班组一">大班组一</option> <option value="大班组二">大班组二</option></select>' +
+            '<select id="d_party" class=" form-control"><option value="小班组一">小班组一</option> <option value="小班组二">小班组二</option></select>' +
+            '生效时间:<input id="entry_time" type="date" value="' + $(cell).parent().siblings("td").eq(4).text() + '" class="form-control">' +
+            '操作人:<input id="operator" type="text" value="' + $(cell).parent().siblings("td").eq(5).text() + '" class="form-control">',
+            yes: function (index) {
+
+                var $td4 = $("#d_district").val() + "，" + $("#d_group").val() + "，" + $("#d_party").val();
+                $(cell).parent().siblings("td").eq(0).html($("#employee_id").val());
+                $(cell).parent().siblings("td").eq(1).html($("#name").val());
+                $(cell).parent().siblings("td").eq(2).html($("#s_post").val());
+                $(cell).parent().siblings("td").eq(3).html($td4);
+                $(cell).parent().siblings("td").eq(4).html($("#entry_time").val());
+                $(cell).parent().siblings("td").eq(5).html($("#operator").val());
+                $(cell).parent().siblings("td").eq(6).html(getNowFormatDate());
+
+                layer.close(index);
+                modify_notify();
+            }
+        });
+    }
+
+    function employeeIdQuery() {
+        var input = $("#query_input").val();
+        for (var i = 0; i < new_item.length; i++) {
+            var value = new_item[i].employee_id.toString();
+            var result = value.indexOf(input.toString());
+            if (result) {
+                $("tbody").children().eq(i).show();
+            }
+            else {
+                $("tbody").children().eq(i).hide();
+            }
+        }
+    }
+
+    function add_notify(){
+        $.notify({
+                title: "添加成功 : ",
+                message: "新增了一条员工调度！",
+                icon: 'fa fa-check'
+            },{
+                type: "info",
+                delay:1000
+            }
+        );
+    }
+
+    function modify_notify(){
+        $.notify({
+                title: "修改成功 : ",
+                message: "修改了一条员工调度！",
+                icon: 'fa fa-check'
+            },{
+                type: "info",
+                delay:1000
+            }
+        );
+    }
+
+    function delete_notify(cell) {
+        swal({
+            title: "确定删除?",
+            text: "删除后不可再恢复!",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonText: "确定",
+            cancelButtonText: "取消",
+            closeOnConfirm: false,
+            closeOnCancel: false
+        }, function (isConfirm) {
+            if (isConfirm) {
+                $(cell).parent().parent().remove();
+                var n = $(cell).parent().parent().attr("id");
+                delete new_item[n];
+                swal("已删除", "选中的记录已被删除！", "success");
+            } else {
+                swal("已撤销", "数据未删除！", "error");
+            }
+        });
+    }
+</script>
 <!-- Google analytics script-->
 <script type="text/javascript">
     if(document.location.hostname == 'pratikborsadiya.in') {

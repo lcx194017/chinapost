@@ -15,7 +15,7 @@
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description"
           content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Basic Tables - Vali Admin</title>
+    <title>Data Table - Vali Admin</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -218,86 +218,133 @@
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-th-list"></i> 工资统计&报表生成</h1>
-
+            <h1><i class="fa fa-th-list"></i> 人员调度日志</h1>
         </div>
-        <ul class="app-breadcrumb breadcrumb">
+        <ul class="app-breadcrumb breadcrumb side">
             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-            <li class="breadcrumb-item active">员工调度</li>
-            <li class="breadcrumb-item active"><a href="#">工资统计&报表生成</a></li>
+            <li class="breadcrumb-item"> 作业区管理</li>
+            <li class="breadcrumb-item active"><a href="#"> 人员调度日志</a></li>
         </ul>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="tile">
-                <div class="tabbable" id="tabs-920216">
-                    <ul class="nav nav-tabs">
-                        <li class="active">
-                            <label class="btn btn-primary" href="#panel-346316" data-toggle="tab">
-                                <a >统计表</a></label>
-                        </li>
-                        <li>
-                            <label class="btn btn-primary" href="#panel-7458" data-toggle="tab">
-                                <a >统计图</a></label>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="report" v-cloak>
-                        <!--统计表-->
-                        <div class="tab-pane active" id="panel-346316">
-                            <h3 class="tile-title">员工工资统计表</h3>
-                            <small>
-                                工资计算公式：总工资 = 总工作量 * 单位工作量工资
-                            </small>
-                            <div class="col-md-12" style="text-align: right;margin-bottom: 10px">
-                                <button type="button" class="btn btn-primary icon-btn"
-                                        @click="saveToExcel(reportData, true)">
-                                    生成报表
-                                </button>
-                            </div>
-                            <table class="table table-striped">
-                                <thead>
-                                <tr align="center">
-                                    <th>
-                                        编号
-                                    </th>
-                                    <th>
-                                        供件时间
-                                    </th>
-                                    <th>
-                                        员工
-                                    </th>
-                                    <th>
-                                        供件台编号
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tbody align="center">
-                                <tr v-for="(data, index) in reportData.slice(startNumSet(),endNumSet())">
-                                    <td>
-                                        {{ index + 1 + startNumSet()}}
-                                    </td>
-                                    <td>
-                                        {{ data.supplytime}}
-                                    </td>
-                                    <td>
-                                        {{data.employee}}
-                                    </td>
-                                    <td>
-                                        {{data.supplyflag}}
-                                    </td>
-                                </tr>
-
-                                </tbody>
-                            </table>
-                            <div is="uib-pagination" :total-items="bigTotalItems"
-                                 v-model="pagination1Report" :max-size="maxSize"
-                                 class="pagination" :boundary-link-numbers="true"></div>
-                        </div>
-                        <!--统计图-->
-                        <div class="tab-pane" id="panel-7458">
-                            <div id="test" style="width: 600px;height:400px;"></div>
-                        </div>
-                    </div>
+                <h3 class="tile-title" align="center">人员调度记录</h3>
+                <div class="tile-body">
+                    <table class="table table-hover table-bordered" id="sampleTable">
+                        <thead align="center">
+                        <tr>
+                            <th>员工编号</th>
+                            <th>姓名</th>
+                            <th>原岗位</th>
+                            <th>现岗位</th>
+                            <th>生效时间</th>
+                            <th>操作人</th>
+                            <th>操作时间</th>
+                        </tr>
+                        </thead>
+                        <tbody align="center">
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -307,20 +354,14 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<!--vue-->
-
-<script src="js/vue.js"></script>
-<script src="js/vuejs-uib-pagination.js"></script>
-<script src="js/echarts.js"></script>
-
 <script src="js/main.js"></script>
 <!-- The javascript plugin to display page loading on top-->
 <script src="js/plugins/pace.min.js"></script>
 <!-- Page specific javascripts-->
-
-<script src="js/data.js"></script>
-<script src="js/report.js"></script>
-
+<!-- Data table plugin-->
+<script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript">$('#sampleTable').DataTable();</script>
 <!-- Google analytics script-->
 <script type="text/javascript">
     if (document.location.hostname == 'pratikborsadiya.in') {
