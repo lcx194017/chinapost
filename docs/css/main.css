@@ -14818,6 +14818,39 @@ be a descendant of the grid when it is being dragged.
   display: none;
 }
 
-.sub-header-margin-left{
-  margin-left: 10px;
+/*desktop*/
+.tab-header-button-left {
+  margin-left: 50px;
+}
+
+.tab-header-date-left{
+  margin-left: 15px;
+}
+
+.tab-header-frequency-left{
+  margin-left: 100px;
+}
+
+/*.scheduling .table th, .scheduling .table td{*/
+  /*padding: 0.5em;*/
+/*}*/
+
+/*laptop*/
+@media (max-width: 1400px){
+  .tab-header-date-left{
+    margin-left: 10px;
+  }
+
+  .tab-header-button-left {
+    margin-left: 0;
+  }
+
+  .tab-header-frequency-left{
+    margin-left: 15px;
+  }
+
+  .scheduling  th, .scheduling  td{
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
 }

@@ -15,7 +15,7 @@
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description"
           content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Basic Tables - Vali Admin</title>
+    <title>Data Table - Vali Admin</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -158,7 +158,7 @@
 
             </ul>
         </li>
-        <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
                 class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">员工调度</span><i
                 class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
@@ -168,7 +168,7 @@
                 </li>
                 <li><a class="treeview-item" href="workload-account.html"><i class="icon fa fa-circle-o"></i> 工作量排行</a>
                 </li>
-                <li><a class="treeview-item active" href="workload-report.html"><i class="icon fa fa-circle-o"></i> 报表生成</a>
+                <li><a class="treeview-item" href="workload-report.html"><i class="icon fa fa-circle-o"></i> 报表生成</a>
                 </li>
             </ul>
         </li>
@@ -180,7 +180,7 @@
                 </li>
             </ul>
         </li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+        <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i
                 class="app-menu__icon fa fa-chain"></i><span class="app-menu__label">作业区管理</span><i
                 class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
@@ -188,7 +188,7 @@
                     损益结算</a></li>
                 <li><a class="treeview-item" href="workspace-cost-detail.html"><i class="icon fa fa-circle-o"></i>
                     成本详情</a></li>
-                <li><a class="treeview-item" href="workspace-income-detail.html"><i class="icon fa fa-circle-o"></i>
+                <li><a class="treeview-item active" href="workspace-income-detail.html"><i class="icon fa fa-circle-o"></i>
                     收入详情</a></li>
                 <li><a class="treeview-item" href="workspace-performance-statistics.html"><i class="icon fa fa-circle-o"></i>
                     绩效考核统计</a></li>
@@ -218,87 +218,142 @@
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-th-list"></i> 工资统计&报表生成</h1>
-
+            <h1><i class="fa fa-th-list"></i> 收入详情</h1>
         </div>
-        <ul class="app-breadcrumb breadcrumb">
+        <ul class="app-breadcrumb breadcrumb side">
             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-            <li class="breadcrumb-item active">员工调度</li>
-            <li class="breadcrumb-item active"><a href="#">工资统计&报表生成</a></li>
+            <li class="breadcrumb-item"> 损益结算</li>
+            <li class="breadcrumb-item active"><a href="#"> 收入详情</a></li>
         </ul>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="tile">
-                <div class="tabbable" id="tabs-920216">
-                    <ul class="nav nav-tabs">
-                        <li class="active">
-                            <label class="btn btn-primary" href="#panel-346316" data-toggle="tab">
-                                <a >统计表</a></label>
-                        </li>
-                        <li>
-                            <label class="btn btn-primary" href="#panel-7458" data-toggle="tab">
-                                <a >统计图</a></label>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="report" v-cloak>
-                        <!--统计表-->
-                        <div class="tab-pane active" id="panel-346316">
-                            <h3 class="tile-title">员工工资统计表</h3>
-                            <small>
-                                工资计算公式：总工资 = 总工作量 * 单位工作量工资
-                            </small>
-                            <div class="col-md-12" style="text-align: right;margin-bottom: 10px">
-                                <button type="button" class="btn btn-primary icon-btn"
-                                        @click="saveToExcel(reportData, true)">
-                                    生成报表
-                                </button>
-                            </div>
-                            <table class="table table-striped">
-                                <thead>
-                                <tr align="center">
-                                    <th>
-                                        编号
-                                    </th>
-                                    <th>
-                                        供件时间
-                                    </th>
-                                    <th>
-                                        员工
-                                    </th>
-                                    <th>
-                                        供件台编号
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tbody align="center">
-                                <tr v-for="(data, index) in reportData.slice(startNumSet(),endNumSet())">
-                                    <td>
-                                        {{ index + 1 + startNumSet()}}
-                                    </td>
-                                    <td>
-                                        {{ data.supplytime}}
-                                    </td>
-                                    <td>
-                                        {{data.employee}}
-                                    </td>
-                                    <td>
-                                        {{data.supplyflag}}
-                                    </td>
-                                </tr>
+                <section class="invoice">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label>班组选择：</label>
+                            <select class="form-control">
+                                <option>作业区一</option>
+                                <option>作业区二</option>
+                                <option>作业区三</option>
+                                <option>全部</option>
+                            </select>
+                            <select class="form-control">
+                                <option>大班组一</option>
+                                <option>大班组二</option>
+                                <option>全部</option>
+                            </select>
+                            <select class="form-control">
+                                <option>小班组一</option>
+                                <option>小班组二</option>
+                                <option>全部</option>
+                            </select>
+                        </div>
+                        <div class="tab-header-date-left">
+                            日期：
+                            <input type="date" value="2018-01-13"/>
+                            至
+                            <input type="date" value="2018-04-03"/>
+                        </div>
 
-                                </tbody>
-                            </table>
-                            <div is="uib-pagination" :total-items="bigTotalItems"
-                                 v-model="pagination1Report" :max-size="maxSize"
-                                 class="pagination" :boundary-link-numbers="true"></div>
+                        <div  class="col-md-3 tab-header-button-left">
+                            <div style="float: right">
+                                <button class="btn btn-success" type="button">查询</button>
+                                <a class="btn btn-primary" href="javascript:window.print();" target="_blank"><i
+                                        class="fa fa-print"></i> 导出</a>
+                            </div>
                         </div>
-                        <!--统计图-->
-                        <div class="tab-pane" id="panel-7458">
-                            <div id="test" style="width: 600px;height:400px;"></div>
-                        </div>
+
                     </div>
-                </div>
+                    <div class="clearfix" style="margin-bottom: 20px"></div>
+                    <h3 class="tile-title" align="center">班组收入详情</h3>
+                    <div class="tile-body">
+                        <table class="table table-hover table-bordered" id="sampleTable">
+                            <thead align="center">
+                            <tr>
+                                <th>编号</th>
+                                <th>收入类型</th>
+                                <th>单位</th>
+                                <th>单价</th>
+                                <th>数量(个、件)</th>
+                                <th>金额</th>
+                                <th>时间</th>
+                                <th>操作人</th>
+                                <th>备注</th>
+                            </tr>
+                            </thead>
+                            <tbody align="center">
+                            <tr>
+                                <td>001</td>
+                                <td>邮件分拣</td>
+                                <td>元/个</td>
+                                <td>0.5</td>
+                                <td>10000</td>
+                                <td>5000</td>
+                                <td>2018-04-09 16:53:27</td>
+                                <td>张三</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>邮件供件</td>
+                                <td>元/个</td>
+                                <td>0.5</td>
+                                <td>10000</td>
+                                <td>5000</td>
+                                <td>2018-04-09 16:53:27</td>
+                                <td>张三</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td>邮件分拣</td>
+                                <td>元/个</td>
+                                <td>0.5</td>
+                                <td>10000</td>
+                                <td>5000</td>
+                                <td>2018-04-09 16:53:27</td>
+                                <td>张三</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>004</td>
+                                <td>邮件供件</td>
+                                <td>元/个</td>
+                                <td>0.5</td>
+                                <td>10000</td>
+                                <td>5000</td>
+                                <td>2018-04-09 16:53:27</td>
+                                <td>张三</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>005</td>
+                                <td>奖励</td>
+                                <td>元/次</td>
+                                <td>1000</td>
+                                <td>1</td>
+                                <td>1000</td>
+                                <td>2018-04-09 16:53:27</td>
+                                <td>张三</td>
+                                <td>赶发率达标</td>
+                            </tr>
+                            <tr>
+                                <td>006</td>
+                                <td>奖励</td>
+                                <td>元/次</td>
+                                <td>1000</td>
+                                <td>1</td>
+                                <td>1000</td>
+                                <td>2018-04-09 16:53:27</td>
+                                <td>张三</td>
+                                <td>未漏件</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
@@ -307,20 +362,14 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<!--vue-->
-
-<script src="js/vue.js"></script>
-<script src="js/vuejs-uib-pagination.js"></script>
-<script src="js/echarts.js"></script>
-
 <script src="js/main.js"></script>
 <!-- The javascript plugin to display page loading on top-->
 <script src="js/plugins/pace.min.js"></script>
 <!-- Page specific javascripts-->
-
-<script src="js/data.js"></script>
-<script src="js/report.js"></script>
-
+<!-- Data table plugin-->
+<script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript">$('#sampleTable').DataTable();</script>
 <!-- Google analytics script-->
 <script type="text/javascript">
     if (document.location.hostname == 'pratikborsadiya.in') {

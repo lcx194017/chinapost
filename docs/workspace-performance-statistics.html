@@ -146,13 +146,13 @@
 
             </ul>
         </li>
-        <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
                 class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">邮件分拣</span><i
                 class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
                 <li><a class="treeview-item" href="sort-data.html"><i class="icon fa fa-circle-o"></i>
                     邮件分拣数据</a></li>
-                <li><a class="treeview-item active" href="sort-statistics.html"><i class="icon fa fa-circle-o"></i> 邮件分拣统计</a>
+                <li><a class="treeview-item" href="sort-statistics.html"><i class="icon fa fa-circle-o"></i> 邮件分拣统计</a>
                 </li>
                 <li><a class="treeview-item" href="sort-report.html"><i class="icon fa fa-circle-o"></i> 分拣报表生成</a></li>
 
@@ -180,17 +180,17 @@
                 </li>
             </ul>
         </li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+        <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i
                 class="app-menu__icon fa fa-chain"></i><span class="app-menu__label">作业区管理</span><i
                 class="treeview-indicator fa fa-angle-right"></i></a>
-            <ul class="treeview-menu">
+            <ul class="treeview-menu ">
                 <li><a class="treeview-item" href="workspace-data.html"><i class="icon fa fa-circle-o"></i>
                     损益结算</a></li>
                 <li><a class="treeview-item" href="workspace-cost-detail.html"><i class="icon fa fa-circle-o"></i>
                     成本详情</a></li>
                 <li><a class="treeview-item" href="workspace-income-detail.html"><i class="icon fa fa-circle-o"></i>
                     收入详情</a></li>
-                <li><a class="treeview-item" href="workspace-performance-statistics.html"><i class="icon fa fa-circle-o"></i>
+                <li><a class="treeview-item active" href="workspace-performance-statistics.html"><i class="icon fa fa-circle-o"></i>
                     绩效考核统计</a></li>
                 <li><a class="treeview-item" href="workspace-performance-data.html"><i class="icon fa fa-circle-o"></i>
                     绩效考核详情</a></li>
@@ -218,35 +218,23 @@
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-pie-chart"></i> 邮件分拣统计</h1>
+            <h1><i class="fa fa-bar-chart-o"></i> 绩效考核统计</h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">
             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-            <li class="breadcrumb-item">邮件分拣</li>
-            <li class="breadcrumb-item"><a href="#">邮件分拣统计</a></li>
+            <li class="breadcrumb-item"> 作业区管理</li>
+            <li class="breadcrumb-item"><a href="#"> 绩效考核统计</a></li>
         </ul>
     </div>
     <div class="row">
         <div class="tile">
-            <h3 class="tile-title" align="center">当天邮件分拣情况统计(2018.04.03)</h3>
-            <div id="shunt-day-statistics" style="width: 1000px; height: 500px;"></div>
+            <h3 class="tile-title" align="center">按班组绩效考核(2018.04.09)</h3>
+            <div id="workspace-performance-by-group" style="width: 1000px; height: 500px;"></div>
         </div>
 
-        <div class="col-md-6">
-            <div class="tile">
-                <h3 class="tile-title" align="center">邮件分拣量</h3>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <canvas class="embed-responsive-item" id="barChartDemo"></canvas>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="tile">
-                <h3 class="tile-title" align="center">分拣机负荷占比</h3>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <canvas class="embed-responsive-item" id="pieChartDemo"></canvas>
-                </div>
-            </div>
+        <div class="tile">
+            <h3 class="tile-title" align="center">按航线绩效考核(2018.04.09)</h3>
+            <div id="workspace-performance-by-airline" style="width: 1000px; height: 500px;"></div>
         </div>
     </div>
 </main>
@@ -260,208 +248,469 @@
 <script src="js/plugins/pace.min.js"></script>
 <!-- Page specific javascripts-->
 <script type="text/javascript" src="js/plugins/chart.js"></script>
-<script type="text/javascript">
 
-    var dataS = {
-        labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
-        datasets: [
-            {
-                label: "My First dataset",
-                fillColor: "rgba(218,112,214,0.2)",
-                strokeColor: "rgba(220,220,220,1)",
-                pointColor: "rgba(220,220,220,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(220,220,220,1)",
-                data: [80, 81, 56, 140, 88, 93, 150, 129, 79, 85, 76, 120, 115]
-            }
-        ]
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('workspace-performance-by-group'));
+    var Name = ['赶发率(%)', '装载率(%)', '漏件(件)'];
+    var color = ['#fb734e', '#e32f46', '#94d96c', '#0bbcb7', '#1a9bfc', '#7049f0'];
+    var data = {
+        "作业区一班组一": [90, 60, 10],
+        "作业区一班组二": [93, 93, 20],
+        "作业区一班组三": [97, 87, 13],
+        "作业区一班组四": [96, 76, 17],
     };
 
-    var sdata = [
-        {
-            value: 300,
-            color: "#f751dd",
-            highlight: "#ff29c0",
-            label: "分拣机S1"
-        },
-        {
-            value: 100,
-            color: "#bf8a17",
-            highlight: "#d3a42e",
-            label: "分拣机S2"
-        },
-        {
-            value: 50,
-            color: "#26a0fd",
-            highlight: "#3179ff",
-            label: "分拣机S3"
-        },
-        {
-            value: 25,
-            color: "#40fd19",
-            highlight: "#3dff1c",
-            label: "分拣机S3"
-        },
-    ]
+    var xAxisData = [];
+    var data1 = [],
+        data2 = [],
+        data3 = [];
+    for (var i in data) {
+        xAxisData.push(i);
+        data1.push(data[i][0])
+        data2.push(data[i][1])
+        data3.push(data[i][2])
+    }
 
-    var ctxb = $("#barChartDemo").get(0).getContext("2d");
-    var barChart = new Chart(ctxb).Bar(dataS);
-
-    var ctxp = $("#pieChartDemo").get(0).getContext("2d");
-    var pieChart = new Chart(ctxp).Pie(sdata);
-
-</script>
-
-<script type="text/javascript">
-    var myChart = echarts.init(document.getElementById('shunt-day-statistics'));
-    option = {
-        backgroundColor: '#394056',
-        tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                lineStyle: {
-                    color: '#57617B'
-                }
-            }
-        },
-        legend: {
-            icon: 'rect',
-            itemWidth: 14,
-            itemHeight: 5,
-            itemGap: 13,
-            data: ['分拣机S1', '分拣机S2', '分拣机S3'],
-            right: '4%',
+    var label = {
+        normal: {
+            show: false,
+            position: 'right',
+            distance: 10,
+            formatter: function (param) {
+                return param.value + '%';
+            },
             textStyle: {
-                fontSize: 12,
-                color: '#F1F1F3'
+                color: '#ffffff',
+                fontSize: '16',
+            }
+        }
+    };
+
+
+    var series = [];
+    for (var j = 1; j < 4; j++) {
+        if (j == 1) {
+            var symbolOffset = [-48, 0];
+            var dataArr = data1
+        } else if (j == 2) {
+            var symbolOffset = [0, 0];
+            var dataArr = data2
+        } else if (j == 3) {
+            var symbolOffset = [48, 0];
+            var dataArr = data3
+        }
+
+        series.push({
+            name: Name[j - 1],
+            type: 'bar',
+            stack: j,
+            xAxisIndex: 0,
+            data: dataArr,
+            label: label,
+            barWidth: 8,
+            barGap: 5,
+            itemStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: color[j * 2 - 2]
+                    }, {
+                        offset: 1,
+                        color: color[j * 2 - 1]
+                    }]),
+                }
+            },
+            z: 2
+        }, {
+            name: Name[j - 1],
+            type: 'scatter',
+            stack: j,
+            xAxisIndex: 0,
+            symbolOffset: symbolOffset, //相对于原本位置的偏移量
+            data: [0, 0, 0, 0],
+            label: {
+                normal: {
+                    show: false,
+                }
+            },
+            xAxisIndex: 2,
+            symbolSize: 14,
+            itemStyle: {
+                normal: {
+                    borderColor: '#fff',
+                    borderWidth: 2,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: color[j * 2 - 2]
+                    }, {
+                        offset: 1,
+                        color: color[j * 2 - 1]
+                    }]),
+                    opacity: 1,
+                }
+            },
+            z: 2
+        }, {
+            name: Name[j - 1],
+            type: 'bar',
+            xAxisIndex: 1,
+            barGap: '140%',
+            data: [dataArr[0] + 15, dataArr[1] + 15, dataArr[2] + 15, dataArr[3] + 15,],
+            barWidth: 20,
+            itemStyle: {
+                normal: {
+                    color: '#0e2147',
+                    barBorderRadius: 5,
+                }
+            },
+            z: 1
+        }, {
+            name: Name[j - 1],
+            type: 'bar',
+            xAxisIndex: 2,
+            data: [dataArr[0] + 15.5, dataArr[1] + 15.5, dataArr[2] + 15.5, dataArr[3] + 15.5,],
+            barWidth: 24,
+            barGap: 1,
+            itemStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: color[j * 2 - 2]
+                    }, {
+                        offset: 1,
+                        color: color[j * 2 - 1]
+                    }]),
+                    barBorderRadius: 5,
+                }
+            },
+            z: 0
+        }, {
+            name: Name[j - 1],
+            type: 'scatter',
+            hoverAnimation: false,
+            data: [1.2, 1.2, 1.2, 1.2],
+            xAxisIndex: 2,
+            symbolOffset: symbolOffset, //相对于原本位置的偏移量
+            symbolSize: 24,
+            itemStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: color[j * 2 - 2]
+                    }, {
+                        offset: 1,
+                        color: color[j * 2 - 1]
+                    }]),
+                    opacity: 1,
+                }
+            },
+            z: 2
+        })
+    }
+    var option = {
+        backgroundColor: '#142058',
+        title: {
+            text: '',
+            x: '10',
+            y: '10',
+            textStyle: {
+                fontWeight: 'normal',
+                fontSize: 24,
+                color: "#fff",
             }
         },
         grid: {
             left: '3%',
-            right: '4%',
-            bottom: '3%',
+            right: '3%',
+            bottom: '10%',
+            top: '10%',
             containLabel: true
+        },
+        tooltip: {
+            show: "true",
+            trigger: 'axis',
+            axisPointer: { // 坐标轴指示器，坐标轴触发有效
+                type: 'shadow', // 默认为直线，可选为：'line' | 'shadow'
+                shadowStyle: {
+                    color: 'rgba(112,112,112,0)',
+                },
+            },
+            formatter: function (params) {
+                var unit = params[0].name.substring(params[0].name.indexOf('(') + 1, params[0].name.indexOf(')'));
+                return params[0].name + ' ：<br />' + params[0].seriesName + ' ：' + params[0].data + unit + '<br />' + params[1].seriesName + ' ：' + params[1].data + unit + '<br />' + params[2].seriesName + ' ：' + params[2].data + unit;
+            },
+            backgroundColor: 'rgba(0,0,0,0.7)', // 背景
+            padding: [8, 10], //内边距
+            extraCssText: 'box-shadow: 0 0 3px rgba(255, 255, 255, 0.4);', //添加阴影
+        },
+        legend: {
+            top: 20,
+            textStyle: {
+                color: '#fff',
+            },
+            data: Name,
         },
         xAxis: [{
             type: 'category',
-            boundaryGap: false,
+            axisTick: {
+                show: false
+            },
             axisLine: {
+                show: true,
                 lineStyle: {
-                    color: '#57617B'
+                    color: '#363e83',
                 }
             },
-            data: ['00：00', '00：30', '01：00', '01：30', '02：00', '02：30', '03：00', '03：30',
-                '04：00', '04:30', '05:00', '05:30', '06：00', '06:30', '07:00', '07:30',
-                '08：00', '08:30', '09:00', '09:30']
+            axisLabel: {
+                inside: false,
+                textStyle: {
+                    color: '#bac0c0',
+                    fontWeight: 'normal',
+                    fontSize: '12',
+                },
+            },
+            data: xAxisData
+        }, {
+            type: 'category',
+            axisLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            },
+            axisLabel: {
+                show: false
+            },
+            splitArea: {
+                show: false
+            },
+            splitLine: {
+                show: false
+            },
+            data: xAxisData
+        }, {
+            type: 'category',
+            axisLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            },
+            axisLabel: {
+                show: false
+            },
+            splitArea: {
+                show: false
+            },
+            splitLine: {
+                show: false
+            },
+            data: xAxisData
         }],
-        yAxis: [{
+        yAxis: {
             type: 'value',
             axisTick: {
                 show: false
             },
             axisLine: {
+                show: true,
                 lineStyle: {
-                    color: '#57617B'
-                }
-            },
-            axisLabel: {
-                margin: 10,
-                textStyle: {
-                    fontSize: 14
+                    color: '#32346c',
                 }
             },
             splitLine: {
+                show: true,
                 lineStyle: {
-                    color: '#57617B'
+                    color: '#32346c ',
+                }
+            },
+            axisLabel: {
+                textStyle: {
+                    color: '#bac0c0',
+                    fontWeight: 'normal',
+                    fontSize: '12',
+                },
+            },
+        },
+        series: series
+    };
+    myChart.setOption(option);
+</script>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('workspace-performance-by-airline'));
+    var option = {
+        backgroundColor: '#23243a',
+        tooltip: { //提示框组件
+            trigger: 'axis',
+            formatter: '{b}<br />{a0}: {c0}<br />{a1}: {c1}',
+            axisPointer: {
+                type: 'shadow',
+                label: {
+                    backgroundColor: '#6a7985'
+                }
+            },
+            textStyle: {
+                color: '#fff',
+                fontStyle: 'normal',
+                fontFamily: '微软雅黑',
+                fontSize: 12,
+            }
+        },
+        grid: {
+            left: '1%',
+            right: '4%',
+            bottom: '6%',
+            top:30,
+            padding:'0 0 10 0',
+            containLabel: true,
+        },
+        legend: {//图例组件，颜色和名字
+            right:10,
+            top:0,
+            itemGap: 16,
+            itemWidth: 18,
+            itemHeight: 10,
+            data:[{
+                name:'赶发率(%)',
+                //icon:'image://../wwwroot/js/url2.png', //路径
+            },
+                {
+                    name:'装载率(%)',
+                }],
+            textStyle: {
+                color: '#a8aab0',
+                fontStyle: 'normal',
+                fontFamily: '微软雅黑',
+                fontSize: 12,
+            }
+        },
+        xAxis: [
+            {
+                type: 'category',
+                boundaryGap: true,//坐标轴两边留白
+                data: ['航线1', '航线2', '航线3', '航线4', '航线5', '航线6', '航线7', '航线8', '航线9', '航线10'],
+                axisLabel: { //坐标轴刻度标签的相关设置。
+                    interval: 0,//设置为 1，表示『隔一个标签显示一个标签』
+                    margin:15,
+                    textStyle: {
+                        color: '#078ceb',
+                        fontStyle: 'normal',
+                        fontFamily: '微软雅黑',
+                        fontSize: 12,
+                    }
+                },
+                axisTick:{//坐标轴刻度相关设置。
+                    show: false,
+                },
+                axisLine:{//坐标轴轴线相关设置
+                    lineStyle:{
+                        color:'#fff',
+                        opacity:0.2
+                    }
+                },
+                splitLine: { //坐标轴在 grid 区域中的分隔线。
+                    show: false,
                 }
             }
-        }],
-        series: [{
-            name: '分拣机S1',
-            type: 'line',
-            smooth: true,
-            lineStyle: {
-                normal: {
-                    width: 1
+        ],
+        yAxis: [
+            {
+                type: 'value',
+                splitNumber: 5,
+                axisLabel: {
+                    textStyle: {
+                        color: '#a8aab0',
+                        fontStyle: 'normal',
+                        fontFamily: '微软雅黑',
+                        fontSize: 12,
+                    }
+                },
+                axisLine:{
+                    show: false
+                },
+                axisTick:{
+                    show: false
+                },
+                splitLine: {
+                    show: true,
+                    lineStyle: {
+                        color: ['#fff'],
+                        opacity:0.06
+                    }
                 }
+
+            }
+        ],
+        series : [
+            {
+                name:'赶发率(%)',
+                type:'bar',
+                data:[89, 73, 92, 86, 77, 76, 92, 96, 96, 64],
+                barWidth: 10,
+                barGap:0,//柱间距离
+                label: {//图形上的文本标签
+                    normal: {
+                        show: true,
+                        position: 'top',
+                        textStyle: {
+                            color: '#a8aab0',
+                            fontStyle: 'normal',
+                            fontFamily: '微软雅黑',
+                            fontSize: 12,
+                        },
+                    },
+                },
+                itemStyle: {//图形样式
+                    normal: {
+                        barBorderRadius: [5, 5, 0, 0],
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 1, color: 'rgba(127, 128, 225, 0.7)'
+                        },{
+                            offset: 0.9, color: 'rgba(72, 73, 181, 0.7)'
+                        },{
+                            offset: 0.31, color: 'rgba(0, 208, 208, 0.7)'
+                        },{
+                            offset: 0.15, color: 'rgba(0, 208, 208, 0.7)'
+                        }, {
+                            offset: 0, color: 'rgba(104, 253, 255, 0.7)'
+                        }], false),
+                    },
+                },
             },
-            areaStyle: {
-                normal: {
-                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                        offset: 0,
-                        color: 'rgba(137, 189, 27, 0.3)'
-                    }, {
-                        offset: 0.8,
-                        color: 'rgba(137, 189, 27, 0)'
-                    }], false),
-                    shadowColor: 'rgba(0, 0, 0, 0.1)',
-                    shadowBlur: 10
-                }
-            },
-            itemStyle: {
-                normal: {
-                    color: 'rgb(137,189,27)'
-                }
-            },
-            data: [963, 964, 975, 956, 981, 948, 896, 941, 801, 524, 758, 947, 772, 991, 673, 788, 888, 823, 723, 909]
-        }, {
-            name: '分拣机S2',
-            type: 'line',
-            smooth: true,
-            lineStyle: {
-                normal: {
-                    width: 1
-                }
-            },
-            areaStyle: {
-                normal: {
-                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                        offset: 0,
-                        color: 'rgba(0, 136, 212, 0.3)'
-                    }, {
-                        offset: 0.8,
-                        color: 'rgba(0, 136, 212, 0)'
-                    }], false),
-                    shadowColor: 'rgba(0, 0, 0, 0.1)',
-                    shadowBlur: 10
-                }
-            },
-            itemStyle: {
-                normal: {
-                    color: 'rgb(0,136,212)'
-                }
-            },
-            data: [973, 992, 993, 1000, 996, 906, 800, 915, 698, 675, 904, 849, 665, 776, 556, 875, 764, 564, 669, 903]
-        }, {
-            name: '分拣机S3',
-            type: 'line',
-            smooth: true,
-            lineStyle: {
-                normal: {
-                    width: 1
-                }
-            },
-            areaStyle: {
-                normal: {
-                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                        offset: 0,
-                        color: 'rgba(219, 50, 51, 0.3)'
-                    }, {
-                        offset: 0.8,
-                        color: 'rgba(219, 50, 51, 0)'
-                    }], false),
-                    shadowColor: 'rgba(0, 0, 0, 0.1)',
-                    shadowBlur: 10
-                }
-            },
-            itemStyle: {
-                normal: {
-                    color: 'rgb(219,50,51)'
-                }
-            },
-            data: [842, 810, 675, 721, 437, 885, 919, 1018, 797, 876, 929, 234, 543, 675, 456, 766, 568, 986, 433, 666]
-        },]
+            {
+                name:'装载率(%)',
+                type:'bar',
+                data:[90, 95, 84, 87, 77, 96, 92, 97, 98, 80],
+                barWidth: 10,
+                barGap:0.2,//柱间距离
+                label: {//图形上的文本标签
+                    normal: {
+                        show: true,
+                        position: 'top',
+                        textStyle: {
+                            color: '#a8aab0',
+                            fontStyle: 'normal',
+                            fontFamily: '微软雅黑',
+                            fontSize: 12,
+                        },
+                    },
+                },
+                itemStyle: {//图形样式
+                    normal: {
+                        barBorderRadius: [5, 5, 0, 0],
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 1, color: 'rgba(127, 128, 225, 0.7)'
+                        },{
+                            offset: 0.9, color: 'rgba(72, 73, 181, 0.7)'
+                        },{
+                            offset: 0.25, color: 'rgba(226, 99, 74, 0.7)'
+                        }, {
+                            offset: 0, color: 'rgba(253, 200, 106, 0.7)'
+                        }], false),
+                    },
+                },
+            }
+        ]
     };
     myChart.setOption(option);
 </script>

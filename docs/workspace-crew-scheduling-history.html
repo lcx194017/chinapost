@@ -15,7 +15,7 @@
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description"
           content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Invoice - Vali Admin</title>
+    <title>Data Table - Vali Admin</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -176,10 +176,30 @@
                 class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">薪资管理</span><i
                 class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-                <li><a class="treeview-item" href="table-basic.html"><i class="icon fa fa-circle-o"></i> Basic
-                    Tables</a></li>
                 <li><a class="treeview-item" href="wage-inquiries.html"><i class="icon fa fa-circle-o"></i> 工资查询</a>
                 </li>
+            </ul>
+        </li>
+        <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+                class="app-menu__icon fa fa-chain"></i><span class="app-menu__label">作业区管理</span><i
+                class="treeview-indicator fa fa-angle-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="treeview-item" href="workspace-data.html"><i class="icon fa fa-circle-o"></i>
+                    损益结算</a></li>
+                <li><a class="treeview-item" href="workspace-cost-detail.html"><i class="icon fa fa-circle-o"></i>
+                    成本详情</a></li>
+                <li><a class="treeview-item" href="workspace-income-detail.html"><i class="icon fa fa-circle-o"></i>
+                    收入详情</a></li>
+                <li><a class="treeview-item" href="workspace-performance-statistics.html"><i class="icon fa fa-circle-o"></i>
+                    绩效考核统计</a></li>
+                <li><a class="treeview-item" href="workspace-performance-data.html"><i class="icon fa fa-circle-o"></i>
+                    绩效考核详情</a></li>
+                <li><a class="treeview-item" href="workspace-administration.html"><i class="icon fa fa-circle-o"></i>
+                    奖惩管理</a></li>
+                <li><a class="treeview-item active" href="workspace-crew-scheduling-plan.html"><i class="icon fa fa-circle-o"></i>
+                    人员调度</a></li>
+                <li><a class="treeview-item" href="workspace-crew-scheduling-history.html"><i class="icon fa fa-circle-o"></i>
+                    调度日志</a></li>
             </ul>
         </li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
@@ -193,225 +213,155 @@
                 <li><a class="treeview-item" href="page-mailbox.html"><i class="icon fa fa-circle-o"></i> 邮箱</a></li>
             </ul>
         </li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
-                class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">作业区管理</span><i
-                class="treeview-indicator fa fa-angle-right"></i></a>
-            <ul class="treeview-menu">
-                <li><a class="treeview-item" href="workspace-data.html"><i class="icon fa fa-circle-o"></i>基本信息</a></li>
-                <li><a class="treeview-item" href="workspace-statistics.html"><i
-                        class="icon fa fa-circle-o"></i>统计信息</a>
-                <li><a class="treeview-item" href="workspace-performance.html"><i
-                        class="icon fa fa-circle-o"></i>绩效考核</a>
-                </li>
-            </ul>
-        </li>
     </ul>
 </aside>
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-file-text-o"></i> 绩效考核</h1>
+            <h1><i class="fa fa-th-list"></i> 人员调度日志</h1>
         </div>
-        <ul class="app-breadcrumb breadcrumb">
+        <ul class="app-breadcrumb breadcrumb side">
             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-            <li class="breadcrumb-item">作业区管理</li>
-            <li class="breadcrumb-item">绩效考核</li>
+            <li class="breadcrumb-item"> 作业区管理</li>
+            <li class="breadcrumb-item active"><a href="#"> 人员调度日志</a></li>
         </ul>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="tile">
-                <div class="form-inline" style="margin-bottom: 10px">
-                    <div class="form-check">
-                        日期精度：
-                        <label><input type="radio" value="" name="optionDate">日 </label>
-                        <label><input type="radio" value="" name="optionDate" checked>月 </label>
-                        <label><input type="radio" value="" name="optionDate">年 </label>
-                    </div>
-                    <div class="sub-header-margin-left">
-                        时间段：
-                        <input type="date" value="2018-01-13">
-                        至
-                        <input type="date" value="2018-04-03">
-                    </div>
-
-
-                    <label class="sub-header-margin-left">
-                        作业区：
-                        <select class="form-control form-control-sm">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </label>
-                    <label class="sub-header-margin-left">
-                        大班组：
-                        <select class="form-control form-control-sm">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </label>
-                    <label class="sub-header-margin-left">
-                        小班组：
-                        <select class="form-control form-control-sm">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </label>
-                    <button class="btn btn-primary btn-sm sub-header-margin-left" type="button"><i
-                            class="fa fa-search"></i>查询
-                    </button>
-                    <a class="btn btn-primary btn-sm " href="#"><i class="fa fa-lg fa-plus"></i>添加</a>
-                    <a class="btn btn-primary btn-sm" href="javascript:window.print();"
-                       target="_blank"><i class="fa fa-print"></i> 打印</a>
-
-
-                </div>
-                <div class="tile-body" id="performance" v-cloak>
-                    <table class="table table-striped">
-                        <thead>
-                        <tr align="center">
-                            <th>
-                                编号
-                            </th>
-                            <th>
-                                供件时间
-                            </th>
-                            <th>
-                                员工
-                            </th>
-                            <th>
-                                供件台编号
-                            </th>
-                            <th>
-                                操作
-                            </th>
+                <h3 class="tile-title" align="center">人员调度记录</h3>
+                <div class="tile-body">
+                    <table class="table table-hover table-bordered" id="sampleTable">
+                        <thead align="center">
+                        <tr>
+                            <th>员工编号</th>
+                            <th>姓名</th>
+                            <th>原岗位</th>
+                            <th>现岗位</th>
+                            <th>生效时间</th>
+                            <th>操作人</th>
+                            <th>操作时间</th>
                         </tr>
                         </thead>
                         <tbody align="center">
-                        <tr v-for="(data, index) in performanceData.slice(startNumSet(),endNumSet())">
-                            <td>
-                                {{ index + 1 + startNumSet()}}
-                            </td>
-                            <td>
-                                {{ data.supplytime}}
-                            </td>
-                            <td>
-                                {{data.employee}}
-                            </td>
-                            <td>
-                                {{data.supplyflag}}
-                            </td>
-                            <td>
-                                <!--<i class="fa fa-pencil-square-o" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-times" aria-hidden="true"></i>-->
-                                <div class="btn-group">
-                                    <!--<a class="btn btn-outline-primary btn-sm" href="#"><i class="fa fa-lg fa-plus"></i></a>-->
-                                    <a class="btn  btn-sm" href="#workspace-edit-modal" data-toggle="modal"><i
-                                            class="fa fa-lg fa-edit"></i></a>
-                                    <a class="btn  btn-sm" href="#"><i class="fa fa-lg fa-trash"></i></a>
-
-                                    <!--workspace-edit-modal-->
-                                    <div class="modal fade" id="workspace-edit-modal" role="dialog"
-                                         aria-labelledby="workspace-edit-modalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h4 class="modal-title" id="workspace-edit-modalLabel">
-                                                        修改
-                                                    </h4>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                            aria-hidden="true">
-                                                        ×
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="tile-body" style="text-align: left">
-                                                        <form>
-                                                            <div class="form-group">
-                                                                <label class="control-label">Name</label>
-                                                                <input class="form-control" type="text"
-                                                                       placeholder="Enter full name">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label">Email</label>
-                                                                <input class="form-control" type="email"
-                                                                       placeholder="Enter email address">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label">Address</label>
-                                                                <textarea class="form-control" rows="4"
-                                                                          placeholder="Enter your address"></textarea>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label">Gender</label>
-                                                                <div class="form-check">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="radio"
-                                                                               name="gender">Male
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="radio"
-                                                                               name="gender">Female
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer">
-
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                        退出
-                                                    </button>
-                                                    <button type="button" class="btn btn-primary">
-                                                        保存
-                                                    </button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </td>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
                         </tr>
-
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>10000001</td>
+                            <td>王艺尊</td>
+                            <td>作业区一，大班组a，小班组1</td>
+                            <td>作业区一，大班组a，小班组2</td>
+                            <td>2018.04.01</td>
+                            <td>王恒泽</td>
+                            <td>2018.03.27</td>
+                        </tr>
                         </tbody>
                     </table>
-                    <div is="uib-pagination" :total-items="bigTotalItems"
-                         v-model="pagination1" :max-size="maxSize"
-                         class="pagination" :boundary-link-numbers="true"></div>
-
                 </div>
-
             </div>
         </div>
     </div>
 </main>
 <!-- Essential javascripts for application to work-->
-<script async="" src="//www.google-analytics.com/analytics.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<!--vue-->
-<script src="js/vue.js"></script>
-<script src="js/vuejs-uib-pagination.js"></script>
-
 <script src="js/main.js"></script>
-<script src="js/data.js"></script>
-<script src="js/workspace-performance.js"></script>
 <!-- The javascript plugin to display page loading on top-->
 <script src="js/plugins/pace.min.js"></script>
 <!-- Page specific javascripts-->
+<!-- Data table plugin-->
 <script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
-<script type="text/javascript">$('#testtest').DataTable();</script>
+<script type="text/javascript">$('#sampleTable').DataTable();</script>
 <!-- Google analytics script-->
 <script type="text/javascript">
     if (document.location.hostname == 'pratikborsadiya.in') {
